@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.ezd.dao.StudentDao">
+    <resultMap id="st" type="edu.ezd.model.Student">
+        <id column="stuid" jdbcType="INTEGER" property="stuid"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="age" property="age" jdbcType="INTEGER"/>
+    </resultMap>
+    <select id="findAll" resultMap="st">
+        select * from student
+    </select>
+
+</mapper>
