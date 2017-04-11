@@ -167,7 +167,7 @@ CREATE TABLE ezd_theAttractionApplicant(
 );
 
 -- 在岗位表新增一个岗位名称（关联PositionName表）
-CREATE TABLE ezd_Post(											-- 岗位表
+CREATE TABLE ezd_Post(											-- 企业招聘信息表
 	postId INT PRIMARY KEY AUTO_INCREMENT,
 	post_title VARCHAR(30) NOT NULL,						-- 招聘岗位的标题
 	company INT REFERENCES ezd_enterprise (enterpriseId),		-- 公司信息
@@ -191,7 +191,7 @@ CREATE TABLE ezd_recruitmentDetails(							-- 岗位详情表
 	JobType INT REFERENCES ezd_recruitmentDetailsType (recruitmentDetailsTypeId),	-- 工作类型（实习或全职）
 	postId INT REFERENCES ezd_Post(postId)						-- 对应的岗位表
 );
--- 新增加
+-- 新增工作类型表跟ezd_recruitmentDetails关联
 CREATE TABLE ezd_recruitmentDetailsType(
 	recruitmentDetailsTypeId INT PRIMARY KEY AUTO_INCREMENT,
 	recruitmentDetailsTypeName varchar(30)		-- 工作类型名称
@@ -228,7 +228,7 @@ CREATE TABLE ezd_userTotal(											-- 用户操作统计表
 	CancellationNumber INT,										-- 取消次数
 	NumberOfEmployed INT,										-- 被录用次数
 	UserTermination INT,										-- 用户解约
-	EnterpriseTermination INT,									-- 用户解约
+	EnterpriseTermination INT,									-- 企业解约
 	AlreadyCompleted INT										-- 已完工
 );
 
