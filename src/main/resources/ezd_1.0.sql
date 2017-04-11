@@ -1,4 +1,4 @@
-﻿-- v1.0
+﻿-- v1.3
 
 
 CREATE DATABASE ezd;
@@ -76,15 +76,15 @@ CREATE TABLE ezd_resume(		-- 简历表
 );
 
 -- 在企业表新增一个行业类型
-CREATE TABLE enterprise( 							-- 企业表
+CREATE TABLE ezd_enterprise( 							-- 企业表
 	enterpriseId INT PRIMARY KEY AUTO_INCREMENT,
 	enterpriseName VARCHAR(30),						-- 企业名称
 	enterpriseIcon VARCHAR(300),					-- 企业图标
 	enterpriseAddress VARCHAR(30),					-- 企业地址
 	enterpriseScale  VARCHAR(30),					-- 企业规模
 	enterpriseIntroduction VARCHAR(200),			-- 企业介绍
-	industry_Name int  references ezd_industry(id)		-- 企业行业类型
-	enterpriseTypeId INT REFERENCES enterpriseType (enterpriseTypeID)
+	industry_Name int  references ezd_industry(id),		-- 企业行业类型
+	enterpriseTypeId INT REFERENCES ezd_enterpriseType (enterpriseTypeID)
 );
 
 
@@ -164,17 +164,17 @@ CREATE TABLE ezd_theAttractionApplicant(
 	applicantId INT PRIMARY KEY AUTO_INCREMENT,
 	applicant int REFERENCES ezd_Users (userId),
 	theAttraction int REFERENCES ezd_theAttraction (theAttractionId)
-)
+);
 
 -- 在岗位表新增一个岗位名称（关联PositionName表）
-CREATE TABLE Post(											-- 岗位表
+CREATE TABLE ezd_Post(											-- 岗位表
 	postId INT PRIMARY KEY AUTO_INCREMENT,
 	post_title VARCHAR(30) NOT NULL,						-- 招聘岗位的标题
-	company INT REFERENCES enterprise (enterpriseId),		-- 公司信息
+	company INT REFERENCES ezd_enterprise (enterpriseId),		-- 公司信息
 	sendPostDate DATETIME DEFAULT CURRENT_TIMESTAMP,		-- 招聘信息发布日期
 	contacts VARCHAR(30) NOT NULL,							-- 招聘联系人
 	contactInformation VARCHAR(30) NOT NULL,				-- 招聘联系人得联系方式
-	Position_name int references ezd_PositionName (PositionName);	-- 关联岗位名称
+	Position_name int references ezd_PositionName (PositionName),	-- 关联岗位名称
  	recruitmentNumber  VARCHAR(20) NOT NULL					-- 招聘人数
 	
 );
@@ -195,7 +195,7 @@ CREATE TABLE ezd_recruitmentDetails(							-- 岗位详情表
 CREATE TABLE ezd_recruitmentDetailsType(
 	recruitmentDetailsTypeId INT PRIMARY KEY AUTO_INCREMENT,
 	recruitmentDetailsTypeName varchar(30)		-- 工作类型名称
-) 
+);
 
 CREATE TABLE ezd_interview(											-- 面试表
 	InterviewId INT PRIMARY KEY AUTO_INCREMENT,
@@ -268,7 +268,7 @@ create table ezd_industry(								-- 行业类型表
 create table ezd_PositionName(									-- 岗位名称表
 	PositionNameId int primary key auto_increment,
 	pname varchar(30),										-- 岗位名称（即：程序员，文员，客户经理等）
-	industry_Name int references industry (industryId) 		-- 所对应的行业
+	industry_Name int references ezd_industry (industryId) 		-- 所对应的行业
 );
 
 
