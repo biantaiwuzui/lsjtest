@@ -174,7 +174,7 @@ CREATE TABLE ezd_Post(											-- 岗位表
 	sendPostDate DATETIME DEFAULT CURRENT_TIMESTAMP,		-- 招聘信息发布日期
 	contacts VARCHAR(30) NOT NULL,							-- 招聘联系人
 	contactInformation VARCHAR(30) NOT NULL,				-- 招聘联系人得联系方式
-	Position_name int references ezd_PositionName (PositionName),	-- 关联岗位名称
+	Position_name int references ezd_PositionName (PositionNameId),	-- 关联岗位名称
  	recruitmentNumber  VARCHAR(20) NOT NULL					-- 招聘人数
 	
 );
