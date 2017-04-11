@@ -3,16 +3,17 @@ package edu.ezd.model;
 import java.util.Date;
 
 /**
+ * 面试表
  * Created by JayJay on 2017/4/7.
  */
 public class Interview {
     private int interviewId;
-    private int interviewStatue;
-    private Date interviewDate;
-    private int take_interviewStatue;
-    private Enterprise enterprise;
-    private Users users;
-    private Resume resume;
+    private int interviewStatue;    //状态，默认（0，待审核，1，通过，2，不通过）
+    private Date interviewDate;      //面试时间
+    private int take_interviewStatue;    //投递简历的状态，1，投简历，2，取消应聘
+    private Enterprise enterprise;          //面试的企业
+    private Users users;                //面试者
+    private Resume resume;              //简历
 
     public int getInterviewId() {
         return interviewId;

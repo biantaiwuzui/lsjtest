@@ -1,17 +1,18 @@
 package edu.ezd.model;
 
 /**
+ * 用户操作统计表
  * Created by JayJay on 2017/4/7.
  */
 public class UserTotal {
     private int userTotalId;
-    private int totalEnrollment;
-    private int cancellationNumber;
-    private int numberOfEmployed;
-    private int userTermination;
-    private int enterpriseTermination;
-    private int alreadyCompleted;
-    private Users users;
+    private int totalEnrollment;    //总报名次数
+    private int cancellationNumber; //取消报名次数
+    private int numberOfEmployed;   //被录用次数
+    private int userTermination;    //用户解约次数
+    private int enterpriseTermination;  //企业解约次数
+    private int alreadyCompleted;   //已经完工次数
+    private Users users;    //关联的用户
 
     public int getUserTotalId() {
         return userTotalId;

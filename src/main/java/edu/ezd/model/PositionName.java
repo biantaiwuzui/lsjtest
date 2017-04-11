@@ -1,19 +1,23 @@
 package edu.ezd.model;
 
+import java.util.List;
+
 /**
+ * 岗位名称表
  * Created by JayJay on 2017/4/9.
  */
 public class PositionName {
-    private int positionName;
-    private String pname;
-    private Industry industry;
+    private int positionNameId;
+    private String pname;   //岗位名称（即：程序员，文员，客户经理等）
+    private Industry industry;   //对应的行业
+    private List<Post> posts;       //对应的企业招聘岗位表
 
-    public int getPositionName() {
-        return positionName;
+    public int getPositionNameId() {
+        return positionNameId;
     }
 
-    public void setPositionName(int positionName) {
-        this.positionName = positionName;
+    public void setPositionNameId(int positionNameId) {
+        this.positionNameId = positionNameId;
     }
 
     public String getPname() {
@@ -32,10 +36,18 @@ public class PositionName {
         this.industry = industry;
     }
 
+    public List<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
+    }
+
     @Override
     public String toString() {
         return "PositionName{" +
-                "positionName=" + positionName +
+                "positionName=" + positionNameId +
                 ", pname='" + pname + '\'' +
                 ", industry=" + industry +
                 '}';

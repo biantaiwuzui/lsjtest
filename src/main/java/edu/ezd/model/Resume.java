@@ -3,6 +3,7 @@ package edu.ezd.model;
 import java.util.Date;
 
 /**
+ * 简历表
  * Created by JayJay on 2017/4/7.
  */
 public class Resume {

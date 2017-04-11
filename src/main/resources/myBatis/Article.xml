@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ezd.dao.ArticleDao">
+
+    <!--通过<resultMap>映射实体类属性名和表的字段名对应关系 -->
+
+    <resultMap id="article" type="Article">
+        <!-- 用id属性来映射主键字段 -->
+        <id property="articleId" column="articleId"></id>
+        <!-- 用result属性来映射非主键字段 -->
+        <result property="mainTitle" column="mainTitle" />
+        <result property="subTitle" column="subTitle" />
+        <result property="articleImg" column="articleImg" />
+        <result property="content" column="content" />
+        <result property="sendDate" column="sendDate" />
+        <result property="sendByUser_email" column="sendByUser_email" />
+        <result property="article_statue" column="article_statue" />
+        <association property="users" resultMap="edu.ezd.dao.UsersDao.users"></association>
+        <collection property="browses" resultMap="edu.ezd.dao.BrowseDao.browse"></collection>
+        <collection property="commentss" resultMap="edu.ezd.dao.CommentsDao.comments"></collection>
+        <collection property="goodByArticles" resultMap="edu.ezd.dao.GoodByArticleDao.goodByArticle"></collection>
+
+    </resultMap>
+
+
+
+
+
+
+
+
+
+    <!--  查询所有广告-->
+    <select id="finaAll" resultMap="UserResultMap">
+        SELECT
+        AdvertisementId,
+        AdvertisementImg,
+        AdvertisementTitle,
+        AdvertisementCotent,
+        AdvertisingUrl,
+        AdvertisingContact,
+        AdvertisingPosition,
+        AdvertisingType,
+        AdvertisingStatue
+        FROM ezd_advertisement
+    </select>
+    <!-- 根据id查询单个广告 -->
+    <select id="getAdvertisement" parameterType="int" resultType="edu.ezd.model.Advertisement">
+        SELECT
+        AdvertisementId,
+        AdvertisementImg,
+        AdvertisementTitle,
+        AdvertisementCotent,
+        AdvertisingUrl,
+        AdvertisingContact,
+        AdvertisingPosition,
+        AdvertisingType,
+        AdvertisingStatue
+        FROM ezd_advertisement
+        WHERE AdvertisementId = #{AdvertisementId}
+    </select>
+
+    <!-- 修改广告信息 -->
+    <update id="update">
+        UPDATE ezd_advertisement
+        <set>
+            <if test="AdvertisementImg != null">AdvertisementImg = #{AdvertisementImg},</if>
+            <if test="AdvertisementTitle != null">AdvertisementTitle = #{AdvertisementTitle},</if>
+            <if test="AdvertisementCotent != null">AdvertisementCotent = #{AdvertisementCotent},</if>
+            <if test="AdvertisingUrl != null">AdvertisingUrl = #{AdvertisingUrl},</if>
+            <if test="AdvertisingContact != null">AdvertisingContact = #{AdvertisingContact},</if>
+            <if test="AdvertisingPosition != null">AdvertisingPosition = #{AdvertisingPosition},</if>
+            <if test="AdvertisingType != null">AdvertisingType = #{AdvertisingType},</if>
+            <if test="AdvertisingStatue != null">AdvertisingStatue = #{AdvertisingStatue},</if>
+        </set> AdvertisementId = #{AdvertisementId}
+        WHERE
+    </update>
+    <!-- 新增广告-->
+    <insert id="save" useGeneratedKeys="true" keyProperty="advertisementId" parameterType="edu.ezd.model.Advertisement">
+        INSERT INTO ezd_advertisement(
+        AdvertisementImg,
+        AdvertisementTitle,
+        AdvertisementCotent,
+        AdvertisingUrl,
+        AdvertisingContact,
+        AdvertisingPosition,
+        AdvertisingType,
+        AdvertisingStatue
+        )
+        VALUES (
+        #{AdvertisementImg},
+        #{AdvertisementTitle},
+        #{AdvertisementCotent},
+        #{AdvertisingUrl},
+        #{AdvertisingContact},
+        #{AdvertisingPosition},
+        #{AdvertisingType},
+        #{AdvertisingStatue}
+        )
+    </insert>
+</mapper>

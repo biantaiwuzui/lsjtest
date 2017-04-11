@@ -15,5 +15,10 @@
         <!-- 开启驼峰命名转化：Table(create_time) -> Entity(createTime) -->
         <setting name="mapUnderscoreToCamelCase" value="true" />
     </settings>
+<!-- 给所有实体类添加别名，别名请参考下面注释-->
+    <typeAliases>
+        <!--  <typeAlias type="edu.ezd.model.Users" alias="Users"/> -->
+        <package name="edu.ezd.model"/>
+    </typeAliases>
 
 </configuration>

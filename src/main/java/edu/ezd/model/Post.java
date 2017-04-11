@@ -4,17 +4,19 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * 招聘信息表
  * Created by JayJay on 2017/4/7.
  */
 public class Post {
     private int postId;
-    private String post_title;
-    private Date sendPostDate;
-    private String contacts;
-    private String contactsInformation;
-    private String recruitmentNumber;
-    private Enterprise enterprise;
-    private List<RecruitmentDetails> recruitmentDetailss;
+    private String post_title;  //招聘岗位的标题
+    private Date sendPostDate;   //发布时间
+    private String contacts;     //联系人
+    private String contactsInformation;  //联系人电话
+    private String recruitmentNumber;    //招聘让你输
+    private Enterprise enterprise;   //企业信息
+    private List<RecruitmentDetails> recruitmentDetailss;    //岗位详情表
+    private PositionName positionName; //岗位名称
 
     public int getPostId() {
         return postId;
@@ -78,6 +80,14 @@ public class Post {
 
     public void setRecruitmentDetailss(List<RecruitmentDetails> recruitmentDetailss) {
         this.recruitmentDetailss = recruitmentDetailss;
+    }
+
+    public PositionName getPositionName() {
+        return positionName;
+    }
+
+    public void setPositionName(PositionName positionName) {
+        this.positionName = positionName;
     }
 
     @Override

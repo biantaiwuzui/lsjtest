@@ -1,16 +1,17 @@
 package edu.ezd.model;
 
 /**
+ * 实名认证表
  * Created by JayJay on 2017/4/7.
  */
 public class Verification {
     private int verificationId;
-    private String RealName;
-    private String idCard;
-    private String phone;
-    private String imageFont;
-    private String imageBack;
-    private Users users;
+    private String realName;    //真实姓名
+    private String idCard;  //身份证号码
+    private String phone;   //手机号码
+    private String imageFont;   //身份证正面
+    private String imageBack;   //身份证背面
+    private Users users;    //对应用户
 
     public int getVerificationId() {
         return verificationId;
@@ -21,11 +22,11 @@ public class Verification {
     }
 
     public String getRealName() {
-        return RealName;
+        return realName;
     }
 
     public void setRealName(String realName) {
-        RealName = realName;
+        this.realName = realName;
     }
 
     public String getIdCard() {

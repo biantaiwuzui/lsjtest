@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ezd.dao.PostDao">
+
+    <!--通过<resultMap>映射实体类属性名和表的字段名对应关系 -->
+
+    <resultMap id="post" type="Post">
+        <!-- 用id属性来映射主键字段 -->
+        <id property="postId" column="postId"></id>
+        <!-- 用result属性来映射非主键字段 -->
+        <result property="post_title" column="post_title" />
+        <result property="sendPostDate" column="sendPostDate" />
+        <result property="contacts" column="contacts" />
+        <result property="contactsInformation" column="contactsInformation" />
+        <result property="recruitmentNumber" column="recruitmentNumber" />
+        <!-- 一对一关联 -->
+        <association property="enterprise"  resultMap="edu.ezd.dao.EnterpriseDao.enterprise"></association>
+        <association property="positionName"  resultMap="edu.ezd.dao.PositionNameDao.positionName"></association>
+        <!--  一对多关联 -->
+        <collection property="recruitmentDetailss" resultMap="" ></collection>
+    </resultMap>
+
+</mapper>

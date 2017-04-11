@@ -1,6 +1,7 @@
 package edu.ezd.model;
 
 /**
+ * 角色用户中间表
  * Created by JayJay on 2017/4/7.
  */
 public class User_role {

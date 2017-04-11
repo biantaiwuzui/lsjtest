@@ -3,6 +3,7 @@ package edu.ezd.model;
 import java.util.List;
 
 /**
+ * 权限表
  * Created by JayJay on 2017/4/7.
  */
 public class Permission {

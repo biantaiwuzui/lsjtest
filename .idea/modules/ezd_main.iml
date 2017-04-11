@@ -13,6 +13,10 @@
           <dependency>web application context</dependency>
           <file>file://$MODULE_DIR$/../../src/main/resources/spring_mvc.xml</file>
         </fileset>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/../../src/main/resources/spring.xml</file>
+          <file>file://$MODULE_DIR$/../../src/main/resources/spring_mvc.xml</file>
+        </fileset>
       </configuration>
     </facet>
     <facet type="web" name="Web Gradle : ezd-1.0-SNAPSHOT.war">

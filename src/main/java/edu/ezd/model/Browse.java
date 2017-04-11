@@ -1,6 +1,7 @@
 package edu.ezd.model;
 
 /**
+ * 浏览过文章记录表
  * Created by JayJay on 2017/4/7.
  */
 public class Browse {

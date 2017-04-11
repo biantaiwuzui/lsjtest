@@ -1,6 +1,7 @@
 package edu.ezd.model;
 
 /**
+ * 角色权限中间表
  * Created by JayJay on 2017/4/7.
  */
 public class Role_permission {

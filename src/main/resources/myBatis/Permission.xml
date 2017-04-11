@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ezd.dao.PermissionDao">
+
+    <!--通过<resultMap>映射实体类属性名和表的字段名对应关系 -->
+
+    <resultMap id="permission" type="Permission">
+        <!-- 用id属性来映射主键字段 -->
+        <id property="permissionId" column="permissionId"></id>
+        <!-- 用result属性来映射非主键字段 -->
+        <result property="permissionName" column="permissionName" />
+        <!--  一对多关联 -->
+        <collection property="role_permissions" resultMap="" ></collection>
+    </resultMap>
+
+</mapper>

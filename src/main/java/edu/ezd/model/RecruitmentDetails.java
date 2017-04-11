@@ -1,17 +1,19 @@
 package edu.ezd.model;
 
 /**
+ * 岗位详情表
  * Created by JayJay on 2017/4/7.
  */
 public class RecruitmentDetails {
     private int RecruitmentDetailsId;
-    private String jobRequirements;
-    private String genderRequirements;
-    private String EducationalRequirements;
-    private String jobContent;
-    private String salary;
-    private Post post;
-    private RecruitmentDetailsType recruitmentDetailsType;
+    private String jobRequirements;      //工作要求
+    private String genderRequirements;   //性别要求
+    private String educationalRequirements;  //学历要求
+    private String companyBenefits; //公司福利（五险一金）
+    private String jobContent;   //工作内容
+    private String salary;   //薪水
+    private Post post;  //关联的招聘信息表
+    private RecruitmentDetailsType recruitmentDetailsType; //工作类型（实习或全职）
 
     public int getRecruitmentDetailsId() {
         return RecruitmentDetailsId;
@@ -37,13 +39,7 @@ public class RecruitmentDetails {
         this.genderRequirements = genderRequirements;
     }
 
-    public String getEducationalRequirements() {
-        return EducationalRequirements;
-    }
 
-    public void setEducationalRequirements(String educationalRequirements) {
-        EducationalRequirements = educationalRequirements;
-    }
 
     public String getJobContent() {
         return jobContent;
@@ -77,17 +73,19 @@ public class RecruitmentDetails {
         this.post = post;
     }
 
-    @Override
-    public String toString() {
-        return "RecruitmentDetails{" +
-                "RecruitmentDetailsId=" + RecruitmentDetailsId +
-                ", jobRequirements='" + jobRequirements + '\'' +
-                ", genderRequirements='" + genderRequirements + '\'' +
-                ", EducationalRequirements='" + EducationalRequirements + '\'' +
-                ", jobContent='" + jobContent + '\'' +
-                ", salary='" + salary + '\'' +
-                ", post=" + post +
-                ", recruitmentDetailsType=" + recruitmentDetailsType +
-                '}';
+    public String getEducationalRequirements() {
+        return educationalRequirements;
+    }
+
+    public void setEducationalRequirements(String educationalRequirements) {
+        this.educationalRequirements = educationalRequirements;
+    }
+
+    public String getCompanyBenefits() {
+        return companyBenefits;
+    }
+
+    public void setCompanyBenefits(String companyBenefits) {
+        this.companyBenefits = companyBenefits;
     }
 }

@@ -1,6 +1,7 @@
 package edu.ezd.model;
 
 /**
+ * 大招会报名表
  * Created by JayJay on 2017/4/9.
  */
 public class TheAttractionApplicant {

@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * 用户信息表
  * Created by JayJay on 2017/4/7.
  */
 public class UserInfo {

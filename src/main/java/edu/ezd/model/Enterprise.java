@@ -3,6 +3,7 @@ package edu.ezd.model;
 import java.util.List;
 
 /**
+ * 企业表
  * Created by JayJay on 2017/4/7.
  */
 public class Enterprise {
@@ -14,6 +15,7 @@ public class Enterprise {
     private String enterpriseIntroduction;  //企业介绍
     private EnterpriseType enterpriseType;  //企业类型
     private List<Post> posts;   //企业职位
+    private Industry industry; //行业
     private List<Interview> interviews; //面试的人
 
 
@@ -89,6 +91,14 @@ public class Enterprise {
         this.interviews = interviews;
     }
 
+    public Industry getIndustry() {
+        return industry;
+    }
+
+    public void setIndustry(Industry industry) {
+        this.industry = industry;
+    }
+
     @Override
     public String toString() {
         return "Enterprise{" +
@@ -100,6 +110,7 @@ public class Enterprise {
                 ", enterpriseIntroduction='" + enterpriseIntroduction + '\'' +
                 ", enterpriseType=" + enterpriseType +
                 ", posts=" + posts +
+                ", industry=" + industry +
                 ", interviews=" + interviews +
                 '}';
     }

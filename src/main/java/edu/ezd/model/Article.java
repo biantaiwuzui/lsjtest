@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * 就业指导表（文章表）
  * Created by JayJay on 2017/4/7.
  */
 public class Article {

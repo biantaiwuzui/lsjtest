@@ -17,6 +17,10 @@ dependencies {
     def springVersion = "4.3.5.RELEASE"
 
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    // 指明 Tomcat 上已经自带的 jar 包，这样发布的时候才不会重复
+    providedCompile(
+            "javax:javaee-web-api:7.0",
+    )
     compile (
 
             // 本地的 OJDBC 包加入进来

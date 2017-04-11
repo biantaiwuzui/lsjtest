@@ -3,6 +3,7 @@ package edu.ezd.model;
 import java.util.List;
 
 /**
+ * 企业类型表
  * Created by JayJay on 2017/4/7.
  */
 public class EnterpriseType {

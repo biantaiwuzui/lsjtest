@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ezd.dao.AdvertisementDao">
+
+    <!--通过<resultMap>映射实体类属性名和表的字段名对应关系 -->
+
+    <resultMap id="advertisements" type="Advertisement">
+        <!-- 用id属性来映射主键字段 -->
+        <id property="advertisementId" column="advertisementId"></id>
+        <!-- 用result属性来映射非主键字段 -->
+        <result property="advertisementImg" column="advertisementImg" />
+        <result property="advertisementTitle" column="advertisementTitle" />
+        <result property="advertisementContent" column="advertisementContent" />
+        <result property="advertisingUrl" column="advertisingUrl" />
+        <result property="advertisingContact" column="advertisingContact" />
+        <result property="advertisingPosition" column="advertisingPosition" />
+        <result property="advertisingType" column="advertisingType" />
+        <result property="advertisingStatue" column="advertisingStatue" />
+
+    </resultMap>
+
+    <!-- mid 别名得作用：因为user表和mobile表都有相同的字段id
+    ，这在mysql里面运行是没问题的，但是在mybaits上运行只能显示一条数据，所以要加上别名，将
+    user的id和mobile的id区分出来-->
+    <!--
+    resultType属性指明查询返回的结果集类型
+    -->
+
+
+    <!--  查询所有广告-->
+    <select id="finaAll" resultMap="UserResultMap">
+        SELECT
+            AdvertisementId,
+            AdvertisementImg,
+            AdvertisementTitle,
+            AdvertisementCotent,
+            AdvertisingUrl,
+            AdvertisingContact,
+            AdvertisingPosition,
+            AdvertisingType,
+            AdvertisingStatue
+         FROM ezd_advertisement
+    </select>
+    <!-- 根据id查询单个广告 -->
+    <select id="getAdvertisement" parameterType="int" resultType="Advertisement">
+        SELECT
+        AdvertisementId,
+        AdvertisementImg,
+        AdvertisementTitle,
+        AdvertisementCotent,
+        AdvertisingUrl,
+        AdvertisingContact,
+        AdvertisingPosition,
+        AdvertisingType,
+        AdvertisingStatue
+        FROM ezd_advertisement
+        WHERE AdvertisementId = #{AdvertisementId}
+    </select>
+
+    <!-- 修改广告信息 -->
+    <update id="update">
+        UPDATE ezd_advertisement
+            <set>
+                <if test="AdvertisementImg != null">AdvertisementImg = #{AdvertisementImg},</if>
+                <if test="AdvertisementTitle != null">AdvertisementTitle = #{AdvertisementTitle},</if>
+                <if test="AdvertisementCotent != null">AdvertisementCotent = #{AdvertisementCotent},</if>
+                <if test="AdvertisingUrl != null">AdvertisingUrl = #{AdvertisingUrl},</if>
+                <if test="AdvertisingContact != null">AdvertisingContact = #{AdvertisingContact},</if>
+                <if test="AdvertisingPosition != null">AdvertisingPosition = #{AdvertisingPosition},</if>
+                <if test="AdvertisingType != null">AdvertisingType = #{AdvertisingType},</if>
+                <if test="AdvertisingStatue != null">AdvertisingStatue = #{AdvertisingStatue},</if>
+            </set> AdvertisementId = #{AdvertisementId}
+        WHERE
+    </update>
+    <!-- 新增广告-->
+    <insert id="save" useGeneratedKeys="true" keyProperty="advertisementId" parameterType="Advertisement">
+        INSERT INTO ezd_advertisement(
+                AdvertisementImg,
+                AdvertisementTitle,
+                AdvertisementCotent,
+                AdvertisingUrl,
+                AdvertisingContact,
+                AdvertisingPosition,
+                AdvertisingType,
+                AdvertisingStatue
+       )
+        VALUES (
+                #{AdvertisementImg},
+                #{AdvertisementTitle},
+                #{AdvertisementCotent},
+                #{AdvertisingUrl},
+                #{AdvertisingContact},
+                #{AdvertisingPosition},
+                #{AdvertisingType},
+                #{AdvertisingStatue}
+        )
+
+    </insert>
+</mapper>

@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * 评论表
  * Created by JayJay on 2017/4/7.
  */
 public class Comments {

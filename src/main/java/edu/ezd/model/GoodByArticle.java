@@ -1,6 +1,7 @@
 package edu.ezd.model;
 
 /**
+ * 就业指导（文章）点赞表
  * Created by JayJay on 2017/4/7.
  */
 public class GoodByArticle {

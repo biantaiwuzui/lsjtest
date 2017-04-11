@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ezd.dao.TheAttractionDao">
+
+    <!--通过<resultMap>映射实体类属性名和表的字段名对应关系 -->
+
+    <resultMap id="theAttraction" type="TheAttraction">
+        <!-- 用id属性来映射主键字段 -->
+        <id property="theAttracionId" column="theAttracionId"></id>
+        <!-- 用result属性来映射非主键字段 -->
+        <result property="title" column="title" />
+        <result property="theAttractionImg" column="theAttractionImg" />
+        <result property="startTime" column="startTime" />
+        <result property="contentBytheAttraction" column="contentBytheAttraction" />
+        <result property="venue" column="venue" />
+        <result property="endTime" column="endTime" />
+        <!--  一对多关联 -->
+        <collection property="theAttractionApplicants" resultMap="edu.ezd.dao.TheAttractionApplicantDao.theAttractionApplicant" ></collection>
+    </resultMap>
+
+</mapper>

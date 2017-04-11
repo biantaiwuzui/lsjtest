@@ -3,19 +3,20 @@ package edu.ezd.model;
 import java.util.List;
 
 /**
+ * 工作类型表
  * Created by JayJay on 2017/4/9.
  */
 public class RecruitmentDetailsType {
-    private int recruitmentDetailsType;
-    private String recruitmentDetailsTypeName;
-    private List<RecruitmentDetails> recruitmentDetailss;
+    private int recruitmentDetailsTypeId;
+    private String recruitmentDetailsTypeName;  //工作类型名称
+    private List<RecruitmentDetails> recruitmentDetailss;   //关联岗位详情表
 
-    public int getRecruitmentDetailsType() {
-        return recruitmentDetailsType;
+    public int getRecruitmentDetailsTypeId() {
+        return recruitmentDetailsTypeId;
     }
 
-    public void setRecruitmentDetailsType(int recruitmentDetailsType) {
-        this.recruitmentDetailsType = recruitmentDetailsType;
+    public void setRecruitmentDetailsTypeId(int recruitmentDetailsTypeId) {
+        this.recruitmentDetailsTypeId = recruitmentDetailsTypeId;
     }
 
     public String getRecruitmentDetailsTypeName() {
@@ -37,7 +38,7 @@ public class RecruitmentDetailsType {
     @Override
     public String toString() {
         return "RecruitmentDetailsType{" +
-                "recruitmentDetailsType=" + recruitmentDetailsType +
+                "recruitmentDetailsType=" + recruitmentDetailsTypeId +
                 ", recruitmentDetailsTypeName='" + recruitmentDetailsTypeName + '\'' +
                 ", recruitmentDetailss=" + recruitmentDetailss +
                 '}';
