@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<title> PC</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" />
+		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="css/common.css" type="text/css">
+		<link rel="stylesheet" href="css/button.css" />
+		<link rel="stylesheet" href="css/yjh.css" type="text/css" />
+
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div class="header">
+				<div class="toggle-btn">
+					<i class="fa fa-navicon"></i>
+				</div>
+				<div class="font-hearder ">
+					欢迎回来，e智多信息网站!&nbsp;&nbsp;&nbsp;<i class="fa fa-unlock"><a href="#" style="color:#5AB0F9">&nbsp;&nbsp;登出</a></i>
+				</div>
+
+			</div>
+
+			<div class="body">
+				<div class="leftMeun">
+					<div id="personInfor">
+						<p style="font-size:18px;color:white;text-align: center;"><b>e智多就业管理</b></p>
+					</div>
+
+					<div class="meun-item" href="#pra" aria-controls="practice" data-toggle="tab">
+						<div class="mokuai mokuai-active"><i class="fa fa-comment"></i>&nbsp;&nbsp;&nbsp;实习管理</div>
+					</div>
+
+					<div class="meun-item" href="#full" aria-controls="full" role="tab" data-toggle="tab">
+						<div class="mokuai"><i class="fa fa-commenting"></i>&nbsp;&nbsp;&nbsp;全职管理</div>
+					</div>
+					<div class="meun-item" href="#user" aria-controls="user" role="tab" data-toggle="tab">
+						<div class="mokuai"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;大招会管理</div>
+					</div>
+
+					<div class="meun-item" href="#scho" aria-controls="scho" role="tab" data-toggle="tab">
+						<div class="mokuai"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;企业管理</div>
+					</div>
+
+					<div class="meun-item" href="#school" aria-controls="school" role="tab" data-toggle="tab">
+						<div class="mokuai"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;学校管理</div>
+					</div>
+
+					<div class="meun-item" href="#stud" aria-controls="stud" role="tab" data-toggle="tab">
+						<div class="mokuai"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;文章信息</div>
+					</div>
+				</div>
+
+				<div class="right-content">
+					<div class="tab-content">
+						<!--
+							实习管理
+	                    -->
+						<div role="tabpanel" class="tab-pane active" id="pra">
+							<div class="right-mokuai">
+								<div class="practice">实习管理<i class="fa fa-angle-down"></i></div>
+							</div>
+
+							<div class="right-body ">
+								<div class="right-body-main ">
+									<div class="main-1">
+										<span class="main-1-1">共发布实习11个</span>
+
+										<span class="main-1-2">
+												<span class="main-1-2-1">0个正在审核</span>
+										<span class="main-1-2-1">3个正在招聘</span>
+										<span class="main-1-2-1">0个下架</span>
+										</span>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<!--
+							全职管理
+	                    -->
+						<div role="tabpanel" class="tab-pane" id="full">
+							<div class="right-mokuai">
+								<div class="practice">全职管理<i class="fa fa-angle-down"></i></div>
+							</div>
+
+							<div class="right-body ">
+								<div class="right-body-main ">
+									<div class="main-1">
+										<span class="main-1-1">全职管理</span>
+
+										<span class="main-1-2">
+												<span class="main-1-2-1">0个正在审核</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--
+	                    	大招会管理
+	                    -->
+						<div role="tabpanel" class="tab-pane" id="user">
+							<div class="right-mokuai">
+								<div class="practice">大招会管理<i class="fa fa-angle-down"></i></div>
+							</div>
+
+							<div class="right-body ">
+								<div class="right-body-main ">
+									<div class="main-1">
+										<span class="main-1-1">文章列表</span>
+
+										<span class="main-1-2">
+											<span class="main-1-2-1">0个正在审核</span>
+										<span class="main-1-2-1">3个正在招聘</span>
+										<span class="main-1-2-1">0个下架</span>
+										</span>
+									</div>
+
+									<div class="article-list">
+										<!--分页-->
+										<ul class="pagination" id="pageLimit">
+
+										</ul>
+										<div class="article-list-1">
+											<span class="article-list-1-bigType">
+												<b>类型：</b>
+												<select name="" class="article-list-1-type">
+													<option value="">请选择</option>
+												</select>
+											</span>
+											<span class="article-list-1-search">
+												<input type="text" name="" class="article-list-1-search-1"  placeholder="请输入：标题、作者"/>
+												<button id="searchBtn1" type="button" class="btn btn-warning">搜索</button>
+												<button id="searchBtn2" type="button" class="btn btn-danger">消除搜索</button>
+											</span>
+
+											<div class="searchRadio">
+												<span>
+													<i class='input_style radio_bg radio_bg_check'><input type="radio" name="hot" value="全部"></i>
+													全部&nbsp;&nbsp;&nbsp;&nbsp;
+												</span>
+												<span>
+													<i class='input_style radio_bg'><input type="radio" name="hot" value="显示"></i>
+													显示&nbsp;&nbsp;&nbsp;&nbsp;
+												</span>
+												<span>
+													<i class='input_style radio_bg'><input type="radio" name="hot" value="隐藏"></i>
+													隐藏
+												</span>
+											</div>
+											<div id="searchAdd">
+												<button id="searchBtn3" type="button" class="btn btn-warning" href="#tabAdd" aria-controls="tabAdd" data-toggle="tab">
+													添加
+												</button>
+											</div>
+										</div>
+
+										<table class="table table-bordered table-striped">
+											<tr>
+												<th>#</th>
+												<th class="thWhite">标题</th>
+												<th>外部链接</th>
+												<th>作者</th>
+												<th>文章类型</th>
+												<th class="thWhite">添加时间</th>
+												<th class="thWhite">排序</th>
+												<th class="thWhite">阅读数量</th>
+												<th class="thWhite">点赞数量</th>
+												<th class="thWhite">评论数量</th>
+												<th>显示状态</th>
+												<th>操作</th>
+											</tr>
+											<tbody id="tbody">
+												<tr>
+													<td>1</td>
+													<td>这是一个很厉害的标题，很厉害的标题，厉害的标题，标题</td>
+													<td></td>
+													<td>帅哥</td>
+													<td>我勒个去</td>
+													<td>2017-4-10 11:00</td>
+													<td>1</td>
+													<td>1</td>
+													<td>1</td>
+													<td>1</td>
+													<td>
+														<div class="miniDiv">
+															显示
+														</div>
+													</td>
+													<td>
+														<button class="btn btn-warning btn-xs" id="btnHidden">隐藏</button>
+														<button class="btn btn-info btn-xs" id="btnEdit" data-toggle="modal" data-target="#myModal">编辑</button>
+														<button class="btn btn-primary btn-xs" id="btnDetails">详情</button>
+														<button class="btn btn-danger btn-xs" id="btnDelete">删除</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<!--编辑按钮-->
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+													&times;
+												</button>
+												<h4 class="modal-title" id="myModalLabel">
+													更改大招会信息
+												</h4>
+											</div>
+											<div class="modal-body">
+												<form action="" style="text-align: center;">
+													<p>标 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 题：<input type="text" id="" value="" /></p>
+													<p>外部链接：<input type="text" id="" value="" /></p>
+													<p>作 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 者：<input type="text" id="" value="" /></p>
+													<p>文章类型：<input type="text" id="" value="" /></p>
+													<p>显示状态：<input type="text" id="" value="" /></p>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+												</button>
+												<button type="button" class="btn btn-primary">
+													提交更改
+												</button>
+											</div>
+										</div>
+										<!-- /.modal-content -->
+									</div>
+									<!-- /.modal -->
+								</div>
+							</div>
+						</div>
+
+						<!--
+							添加大招会
+	                    -->
+						<div role="tabpanel" class="tab-pane" id="tabAdd">
+							<div class="right-mokuai">
+								<div class="practice">
+									<span style="margin-right:20px ;">大招会管理<i class="fa fa-angle-down"></i></span>
+									<span>添加大招会<i class="fa fa-angle-down"></i></span>
+								</div>
+							</div>
+
+							<div class="right-body ">
+								<div class="right-body-main ">
+
+									<!--添加大招会表单-->
+									<table border="0" class="smallAddTab">
+										<tr>
+											<th>*文章类型：</th>
+											<td>
+												<select name="" class="TabTextBox">
+													<option value="">请选择</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th>*标题：</th>
+											<td><input type="text" name="" class="TabTextBox" value="" /></td>
+										</tr>
+										<tr>
+											<th>*副标题(分享内容)：</th>
+											<td><input type="text" name="" class="TabTextBox" value="" /></td>
+										</tr>
+										<tr>
+											<th>*作者：</th>
+											<td><input type="text" name="" class="TabTextBox" placeholder="请输入：用户名、手机号" /></td>
+										</tr>
+										<tr>
+											<th>*作者邮箱：</th>
+											<td><input type="email" name="" class="TabTextBox" value="" /></td>
+										</tr>
+										<tr>
+											<th>*关键字：</th>
+											<td><input type="text" name="" class="TabTextBox" value="" /></td>
+										</tr>
+										<tr>
+											<th>*显示状态：</th>
+											<td>
+												<div class="searchRadio">
+													<span>
+														<i class='input_style radio_bg radio_bg_check'><input type="radio" name="hot" value="全部"></i>
+														是&nbsp;&nbsp;&nbsp;&nbsp;
+													</span>
+													<span>
+														<i class='input_style radio_bg'><input type="radio" name="hot" value="显示"></i>
+														否&nbsp;&nbsp;&nbsp;&nbsp;
+													</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>*外部链接：</th>
+											<td><input type="text" name="" class="TabTextBox" value="" /></td>
+										</tr>
+										<tr>
+											<th>*标签：</th>
+											<td>
+												<textarea></textarea><i class="icon-info-sign"></i>
+											</td>
+										</tr>
+										<tr>
+											<th>*文章封面图：</th>
+											<td><input type="file" name="" id="" value="" /></td>
+										</tr>
+										<tr>
+											<th>*文章分享图：</th>
+											<td><input type="file" name="" id="" value="" /></td>
+										</tr>
+										<tr>
+											<th>*内容：</th>
+											<td>
+												<form>
+													<textarea name="content" style="width:800px;height:400px;visibility:hidden;"></textarea>
+													
+												</form>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						
+						
+						<!--
+							企业管理
+	                    -->
+						<div role="tabpanel" class="tab-pane" id="scho">
+							<div class="right-mokuai">
+								<div class="practice">企业管理<i class="fa fa-angle-down"></i></div>
+							</div>
+
+							<div class="right-body ">
+								<div class="right-body-main ">
+									<div class="main-1">
+										<span class="main-1-1">企业列表</span>
+
+										<span class="main-1-2">
+												<span class="main-1-2-1">0个正在审核</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--
+							学校管理
+	                    -->
+
+						<div role="tabpanel" class="tab-pane" id="school">
+							<div class="right-mokuai">
+								<div class="practice">学校管理<i class="fa fa-angle-down"></i></div>
+							</div>
+
+							<div class="right-body ">
+								<div class="right-body-main ">
+									<div class="main-1">
+										<span class="main-1-1">学校列表</span>
+
+										<span class="main-1-2">
+												<span class="main-1-2-1">0个正在审核</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--
+	                    	文章管理
+	                    -->
+						<div role="tabpanel" class="tab-pane" id="stud">
+							<div class="right-mokuai">
+								<div class="practice">文章管理<i class="fa fa-angle-down"></i></div>
+							</div>
+
+							<div class="right-body ">
+								<div class="right-body-main ">
+									<div class="main-1">
+										<span class="main-1-1">学校列表</span>
+
+										<span class="main-1-2">
+												<span class="main-1-2-1">0个正在审核</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-paginator.js"></script>
+		<script type="text/javascript" src="js/bootstrap-paginator.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery.nouislider.js"></script>
+		<script type="text/javascript" src="js/bootstrap-tab.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/input.js" charset="utf-8"></script>
+		<script src="js/kindeditor-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zh_CN.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--菜单点击高亮度-->
+		<script type="text/javascript">
+			$(function() {
+				$(".mokuai").click(function() {
+					$(".mokuai").removeClass("mokuai-active");
+					$(this).addClass("mokuai-active");
+
+				});
+			});
+		</script>
+		<!--
+            	隐藏按钮
+            -->
+		<script type="text/javascript">
+			$(function() {
+				$(".toggle-btn").click(function() {
+					if($(".leftMeun").css("display") == "none") {
+						$(".leftMeun").show();
+						$(".right-content").css("width", "87%");
+						$(".right-content").css("padding-left", "200px");
+
+					} else {
+						$(".leftMeun").hide();
+						$(".right-content").css("width", "100%");
+						$(".right-content").css("padding-left", "0");
+					}
+
+				});
+			});
+		</script>
+
+		<!--点击回到顶部-->
+		<script type="text/JavaScript">
+			$(function(){ $(".mokuai").click(function() { $("html,body").animate({scrollTop:0}, 0); }); })
+		</script>
+		<!--分页-->
+		<script type="text/javascript">
+			$('#pageLimit').bootstrapPaginator({
+				currentPage: 1, //当前页
+				totalPages: 10, //总页数
+				size: "small", //尺寸 
+				bootstrapMajorVersion: 3,
+				alignment: "right",
+				numberOfPages: 5,
+				itemTexts: function(type, page, current) {
+					switch(type) {
+						case "first":
+							return "首页";
+						case "prev":
+							return "上一页";
+						case "next":
+							return "下一页";
+						case "last":
+							return "末页";
+						case "page":
+							return page;
+					}
+				}, //点击事件，用于通过Ajax来刷新整个list列表
+				onPageClicked: function(event, originalEvent, type, page) {
+					/*$.ajax({
+					    url: "/OA/Setting/GetDate?id=" + page,
+					    type: "Post",
+					    data: "page=" + page,
+					    success: function (data) {
+					        
+					    }
+					});*/
+					var str = ""
+					str += "<tr>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" + page + "</td>";
+					str += "<td>" +
+						"<button class='btn btn-warning btn-xs' id='btnHidden'>隐藏</button>" +
+						"<button class='btn btn-info btn-xs' id='btnEdit' data-toggle='modal' data-target='#myModal'>编辑</button>" +
+						"<button class='btn btn-primary btn-xs' id='btnDetails'>详情</button>" +
+						"<button class='btn btn-danger btn-xs' id='btnDelete'>删除</button>" +
+						"</td>";
+					str += "</tr>";
+					$("#tbody").html(str);
+				}
+			});
+		</script>
+
+		<!--editor编辑器-->
+		<script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					allowFileManager : true
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,335 @@
+@charset "utf-8";
+/* CSS Document */
+/*外层框架样式*/
+
+body html{
+	min-width: 100%;
+	height: 100%;
+}
+.container-fluid {
+	padding-left: 0!important;
+}
+#wrap {
+	min-width: 100%;
+	position: absolute;
+	background: #eff3f6 bottom;
+	min-height: 100%;
+	overflow: hidden;
+}
+/*@media (min-width: 660px) #wrap {
+	min-width: 650px;
+}
+@media (min-width: 768px) #wrap {
+	width: 100%;
+	min-width: 750px;
+}
+@media (min-width: 992px) #wrap {
+	width: 100%;
+	min-width: 970px;
+}
+@media (min-width: 1200px) #wrap {
+	width: 100%;
+	min-width: 1170px;
+}*/
+.header{
+	min-width: 100%;
+	height: 40px;
+	background-color: #1B8CF2;
+	line-height: 40px;
+	padding: 0 50px;
+	position: fixed;
+	z-index: 9999;
+	
+}
+.fa-navicon{
+	color: white;
+}
+.font-hearder{
+	color: white;
+	
+	float: right;
+}
+.fa-unlock{
+	color: #5AB0F9
+}
+.pd0px {
+	padding-left: 200px!important;
+}
+.leftMeun {
+	height: 100%;
+	background: #424F57 bottom;
+	padding-top: 30px;
+	position: fixed;
+	top: 40px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	width: 200px;
+}
+.right-content{
+	box-sizing: border-box;
+	margin-top: 40px;
+	min-width: 100%;
+	padding-left: 200px;
+	background-color: #E4E9EF;
+	float: left;
+}
+/*左侧菜单栏*/
+meun-item-active
+#logoDiv {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 70px;
+	background-color: #354457;
+	font-size: 17px;
+	color: #fff;
+	vertical-align: bottom;
+}
+#logo {
+	height: 30px;
+	padding-right: 5px;
+}
+#logoDiv span {
+	vertical-align: bottom;
+}
+#personInfor {
+	padding: 20px 5px 30px;
+	color: white;
+}
+#personInfor p {
+	font-size: 12px;
+	margin-left: -5px;
+}
+#personInfor a {
+	color: #B3BCC5;
+	text-decoration: underline;
+}
+#userName {
+	font-size: 15px!important;
+	padding: 0;
+	margin: 0;
+}
+.line-div {
+	color: #F00;
+	height: 5px;
+}
+.meun dl {
+	padding: 0 10px;
+}
+.meun-title {
+	color: #828e9a;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.meun-item {
+	padding: 0 25px;
+}
+.mokuai{
+	width: 100%;
+	height: 40px;
+	color: white;
+	padding:10px 0px;
+	padding-left: 20px;
+	cursor: pointer;
+	border-radius: 3px;
+	text-align: left;
+}
+.meun-item-active{
+	width: 100%;
+	height: 40px;
+	background-color: #586671;
+	color: white;
+	cursor: pointer;
+	border-radius: 3px;
+	text-align: left;
+}
+/*右侧具
+ * 体内容栏目*/
+.btn {
+	border: none;
+}
+.toggle-btn {
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	padding: 0px;
+	cursor: pointer;
+	float: left;
+	color: #212121;
+	-moz-transition: all 0.2s ease-out 0s;
+	-webkit-transition: all 0.2s ease-out 0s;
+	transition: all 0.2s ease-out 0s;
+}
+.pd0px {
+	padding-left: 200px!important;
+}
+select {
+	padding: 0 auto!important;
+}
+.mokuai-active{
+	width: 100%;
+	height: 40px;
+	background-color:#586671 ;
+	color: white;
+	padding-left: 20px;
+	
+	border-radius: 3px;	
+}
+.right-mokuai{
+	width: 100%;
+	padding-left: 18px;
+	padding-top: 20px;
+	padding-bottom:27px ;
+}
+.practice {
+	padding-left: 22px;
+	color:#B8BFC9;
+}
+.right-body{
+	padding:0px 20px ;
+}
+.right-body-main{
+	width: 100%;
+	min-height: 510px;
+	background-color: white;
+	border-radius: 5px;
+	padding:0 25px;
+	padding-top:20px ;
+	margin-bottom: 20px;
+}
+.main-1{
+	height: 30px;
+	width: 100%;
+	background-color: #1B8CF2;
+	border-radius: 3px;
+	color: white;
+	padding-left: 10px;
+	font-size: 10px;
+	line-height: 30px;
+}
+.main-1-1{
+	float: left;
+}
+.main-1-2{
+	float: right;
+}
+.main-1-2-1{
+	margin: 0  18px;
+}
+.main-2{
+	margin-top: 30px;
+	height: 40px;
+	width: 100%;
+}
+
+.main-3{
+	margin-top: 0px;
+	height: 30px;
+	width: 100%;
+	font-size: 15px;
+	color: black;
+}
+.form-control{
+	width: 200px;
+	padding: 0;
+	margin: 0;
+	height: 30px;
+}
+.selectpicker{
+	width: 100px;
+}
+.main-4{
+	margin-top: 30px;
+}
+/*进度条样式*/
+
+/*@media (max-width: 1200px) {
+	.leftMeun{
+		display: none;
+		width: 18%;
+		}
+	
+	.right-content {
+		
+		width: 100%;
+		
+	}
+	.tab-pane {
+		min-width: 973px;
+	}
+	.toggle-btn {
+		display: block;
+		width: 20px;
+		height: 20px;
+
+	}
+	
+	
+}*/
+
+
+/*
+@media (max-width: 880px) {
+	
+	.leftMeun{
+		display: none;
+		width: 15%;
+		
+	}
+	.mokuai{
+	padding-left: 0px;
+	}
+	.right-content {
+		
+		width: 100%;
+		
+	}
+	
+	
+	.tab-pane {
+		min-width: 973px;
+	}
+	
+	.toggle-btn {
+		display: block;
+		width: 20px;
+		height: 20px;
+
+	}
+}
+
+
+@media (max-width: 500px) {
+	
+	.leftMeun{
+		display: none;
+		width: 50%;
+		
+	}
+
+	.mokuai{
+	padding-left: 0px;
+	}
+	.font-hearder{
+		display: none;
+	}
+	.right-content {
+		width: 100%;
+		
+	}
+	.tab-pane {
+		min-width: 973px;
+	}
+	
+	.toggle-btn {
+		display: block;
+		width: 20px;
+		height: 20px;
+
+	}
+}
+*/
+
+
