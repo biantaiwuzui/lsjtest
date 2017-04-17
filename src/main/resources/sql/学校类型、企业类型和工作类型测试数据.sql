@@ -10,7 +10,6 @@ SELECT * FROM ezd_schoolType;
 -- 插入企业类型
 INSERT INTO ezd_enterpriseType(enterpriseTypeName) VALUES('it/互联网'),
 ('政府/非营业机构'),
-('it/互联网'),
 ('电子/通信/硬件'),
 ('农/林、牧 、渔'),
 ('广告/传媒/影视/文化'),
