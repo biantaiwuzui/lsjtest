@@ -16,7 +16,7 @@ import javax.annotation.Resource;
  * Created by JayJay on 2017/4/17.
  */
 @Controller
-@RequestMapping("/industry")
+@RequestMapping("/industryType")
 public class IndustryControler {
     @Resource
     private IndustryService industryService;

@@ -20,7 +20,7 @@ import java.util.List;
  * Created by JayJay on 2017/4/17.
  */
 @Controller
-@RequestMapping("/type")
+@RequestMapping("/enterpriserType")
 public class EnterperiserTypeControler {
     private static final Logger log = Logger.getLogger(EnterperiserTypeControler.class);
 

@@ -15,7 +15,7 @@
     $(document).ready(function(){
        $.ajax({
            type: "post",
-           url: "${pageContext.request.contextPath}/type/getType",
+           url: "${pageContext.request.contextPath}/enterpriseType/getType",
            success: function(data){
                console.log(data);
                var str="";
