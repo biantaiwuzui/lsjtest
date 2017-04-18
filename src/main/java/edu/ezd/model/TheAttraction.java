@@ -82,17 +82,5 @@ public class TheAttraction {
         this.theAttractionApplicants = theAttractionApplicants;
     }
 
-    @Override
-    public String toString() {
-        return "TheAttraction{" +
-                "theAttracionId=" + theAttracionId +
-                ", title='" + title + '\'' +
-                ", theAttractionImg='" + theAttractionImg + '\'' +
-                ", startTime=" + startTime +
-                ", contentBytheAttraction='" + contentBytheAttraction + '\'' +
-                ", venue='" + venue + '\'' +
-                ", endTime=" + endTime +
-                ", theAttractionApplicants=" + theAttractionApplicants +
-                '}';
-    }
+
 }

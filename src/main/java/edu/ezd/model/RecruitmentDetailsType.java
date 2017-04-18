@@ -35,12 +35,5 @@ public class RecruitmentDetailsType {
         this.recruitmentDetailss = recruitmentDetailss;
     }
 
-    @Override
-    public String toString() {
-        return "RecruitmentDetailsType{" +
-                "recruitmentDetailsType=" + recruitmentDetailsTypeId +
-                ", recruitmentDetailsTypeName='" + recruitmentDetailsTypeName + '\'' +
-                ", recruitmentDetailss=" + recruitmentDetailss +
-                '}';
-    }
+
 }

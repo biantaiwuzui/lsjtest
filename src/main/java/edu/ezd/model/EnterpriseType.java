@@ -37,12 +37,4 @@ public class EnterpriseType {
 
 
 
-    @Override
-    public String toString() {
-        return "EnterpriseType{" +
-                "enterpriseTypeId=" + enterpriseTypeId +
-                ", enterpriseTypeName='" + enterpriseTypeName + '\'' +
-                ", enterprises=" + enterprises +
-                '}';
-    }
 }

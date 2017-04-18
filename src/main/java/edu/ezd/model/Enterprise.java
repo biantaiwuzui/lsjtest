@@ -99,19 +99,5 @@ public class Enterprise {
         this.industry = industry;
     }
 
-    @Override
-    public String toString() {
-        return "Enterprise{" +
-                "enterpriseId=" + enterpriseId +
-                ", enterpriseName='" + enterpriseName + '\'' +
-                ", enterpriseIcon='" + enterpriseIcon + '\'' +
-                ", enterpriseAddress='" + enterpriseAddress + '\'' +
-                ", enterpriseScale='" + enterpriseScale + '\'' +
-                ", enterpriseIntroduction='" + enterpriseIntroduction + '\'' +
-                ", enterpriseType=" + enterpriseType +
-                ", posts=" + posts +
-                ", industry=" + industry +
-                ", interviews=" + interviews +
-                '}';
-    }
+
 }

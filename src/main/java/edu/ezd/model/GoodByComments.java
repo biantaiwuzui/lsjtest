@@ -42,13 +42,5 @@ public class GoodByComments {
         this.users = users;
     }
 
-    @Override
-    public String toString() {
-        return "GoodByComments{" +
-                "gid=" + gid +
-                ", goodBycomments_statue=" + goodBycomments_statue +
-                ", comments=" + comments +
-                ", users=" + users +
-                '}';
-    }
+
 }

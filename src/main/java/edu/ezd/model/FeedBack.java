@@ -42,13 +42,4 @@ public class FeedBack {
         this.userInfo = userInfo;
     }
 
-    @Override
-    public String toString() {
-        return "FeedBack{" +
-                "feedBackId=" + feedBackId +
-                ", feedBackProblem='" + feedBackProblem + '\'' +
-                ", opinion='" + opinion + '\'' +
-                ", userInfo=" + userInfo +
-                '}';
-    }
 }

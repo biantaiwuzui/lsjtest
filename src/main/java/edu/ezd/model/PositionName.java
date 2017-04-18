@@ -44,12 +44,5 @@ public class PositionName {
         this.posts = posts;
     }
 
-    @Override
-    public String toString() {
-        return "PositionName{" +
-                "positionName=" + positionNameId +
-                ", pname='" + pname + '\'' +
-                ", industry=" + industry +
-                '}';
-    }
+
 }

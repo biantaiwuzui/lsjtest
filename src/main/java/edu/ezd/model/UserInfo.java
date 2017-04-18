@@ -108,20 +108,5 @@ public class UserInfo {
         this.resumes = resumes;
     }
 
-    @Override
-    public String toString() {
-        return "UserInfo{" +
-                "userInfoId=" + userInfoId +
-                ", birthday=" + birthday +
-                ", headPortrait='" + headPortrait + '\'' +
-                ", phone='" + phone + '\'' +
-                ", nickName='" + nickName + '\'' +
-                ", school='" + school + '\'' +
-                ", sex=" + sex +
-                ", jobIntention='" + jobIntention + '\'' +
-                ", feedBacks=" + feedBacks +
-                ", users=" + users +
-                ", resumes=" + resumes +
-                '}';
-    }
+
 }

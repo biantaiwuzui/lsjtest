@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ezd.dao.FeedBackDao">
+
+    <!--通过<resultMap>映射实体类属性名和表的字段名对应关系 -->
+
+    <resultMap id="feedBack" type="FeedBack">
+        <!-- 用id属性来映射主键字段 -->
+        <id property="feedBackId" column="feedBackId"></id>
+        <!-- 用result属性来映射非主键字段 -->
+        <result property="feedBackProblem" column="feedBackProblem" />
+        <result property="opinion" column="opinion" />
+        <association property="userInfo"  resultMap="edu.ezd.dao.UserInfoDao.userInfo"></association>
+
+    </resultMap>
+
+</mapper>

@@ -33,12 +33,5 @@ public class TheAttractionApplicant {
         this.users = users;
     }
 
-    @Override
-    public String toString() {
-        return "TheAttractionApplicant{" +
-                "applicantId=" + applicantId +
-                ", theAttraction=" + theAttraction +
-                ", users=" + users +
-                '}';
-    }
+
 }

@@ -71,16 +71,5 @@ public class Interview {
         this.resume = resume;
     }
 
-    @Override
-    public String toString() {
-        return "Interview{" +
-                "interviewId=" + interviewId +
-                ", interviewStatue=" + interviewStatue +
-                ", interviewDate=" + interviewDate +
-                ", take_interviewStatue=" + take_interviewStatue +
-                ", enterprise=" + enterprise +
-                ", users=" + users +
-                ", resume=" + resume +
-                '}';
-    }
+
 }

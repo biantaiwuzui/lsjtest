@@ -78,17 +78,5 @@ public class UserTotal {
         this.users = users;
     }
 
-    @Override
-    public String toString() {
-        return "UserTotal{" +
-                "userTotalId=" + userTotalId +
-                ", totalEnrollment=" + totalEnrollment +
-                ", cancellationNumber=" + cancellationNumber +
-                ", numberOfEmployed=" + numberOfEmployed +
-                ", userTermination=" + userTermination +
-                ", enterpriseTermination=" + enterpriseTermination +
-                ", alreadyCompleted=" + alreadyCompleted +
-                ", users=" + users +
-                '}';
-    }
+
 }

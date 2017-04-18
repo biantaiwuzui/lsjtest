@@ -42,13 +42,4 @@ public class User_enterprise {
         this.enterprise = enterprise;
     }
 
-    @Override
-    public String toString() {
-        return "User_enterprise{" +
-                "user_enterprise_id=" + user_enterprise_id +
-                ", user_enterprise_statu=" + user_enterprise_statu +
-                ", users=" + users +
-                ", enterprise=" + enterprise +
-                '}';
-    }
 }

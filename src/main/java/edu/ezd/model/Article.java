@@ -117,21 +117,5 @@ public class Article {
         this.goodByArticles = goodByArticles;
     }
 
-    @Override
-    public String toString() {
-        return "Article{" +
-                "articleId=" + articleId +
-                ", mainTitle='" + mainTitle + '\'' +
-                ", subTitle='" + subTitle + '\'' +
-                ", articleImg='" + articleImg + '\'' +
-                ", content='" + content + '\'' +
-                ", sendDate=" + sendDate +
-                ", sendByUser_email='" + sendByUser_email + '\'' +
-                ", article_statue=" + article_statue +
-                ", users=" + users +
-                ", browses=" + browses +
-                ", commentss=" + commentss +
-                ", goodByArticles=" + goodByArticles +
-                '}';
-    }
+
 }

@@ -156,25 +156,5 @@ public class Users {
         this.theAttractionApplicants = theAttractionApplicants;
     }
 
-    @Override
-    public String toString() {
-        return "Users{" +
-                "userId=" + userId +
-                ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                ", userType='" + userType + '\'' +
-                ", token='" + token + '\'' +
-                ", user_roles=" + user_roles +
-                ", userInfo=" + userInfo +
-                ", user_enterprises=" + user_enterprises +
-                ", feedBacks=" + feedBacks +
-                ", articles=" + articles +
-                ", browses=" + browses +
-                ", comments=" + comments +
-                ", theAttractionApplicants=" + theAttractionApplicants +
-                ", interviews=" + interviews +
-                ", userTotal=" + userTotal +
-                ", verification=" + verification +
-                '}';
-    }
+
 }

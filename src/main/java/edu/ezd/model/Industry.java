@@ -44,13 +44,5 @@ public class Industry {
         this.positionNames = positionNames;
     }
 
-    @Override
-    public String toString() {
-        return "Industry{" +
-                "industryId=" + industryId +
-                ", industryName='" + industryName + '\'' +
-                ", enterprises=" + enterprises +
-                ", positionNames=" + positionNames +
-                '}';
-    }
+
 }

@@ -63,15 +63,5 @@ public class Comments {
         this.goodByCommentss = goodByCommentss;
     }
 
-    @Override
-    public String toString() {
-        return "Comments{" +
-                "commentId=" + commentId +
-                ", commentContent='" + commentContent + '\'' +
-                ", commentDate=" + commentDate +
-                ", article=" + article +
-                ", users=" + users +
-                ", goodByCommentss=" + goodByCommentss +
-                '}';
-    }
+
 }

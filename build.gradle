@@ -23,9 +23,7 @@ dependencies {
     )
     compile (
 
-            // 本地的 OJDBC 包加入进来
-            //files("F:/ojdbc6.jar"),
-          // "cn.easyproject:ojdbc7:12.1.0.2.0",
+
             // 用来管理数据源的知名 jar 包
             "c3p0:c3p0:0.9.1.2",
 
@@ -43,13 +41,20 @@ dependencies {
             // 配置 spring
             "org.springframework:spring-web:$springVersion",
             "org.springframework:spring-orm:$springVersion",
+            "org.springframework:spring-aop:$springVersion",
             "org.springframework:spring-webmvc:$springVersion",
             "com.fasterxml.jackson.core:jackson-databind:2.5.1",
+
+            // 发送邮件jar包
+            'javax.mail:javax.mail-api:1.5.6',
 
             //互亿无线短信接口 commons-logging spring自带了
             "commons-httpclient:commons-httpclient:3.1",
             "commons-codec:commons-codec:1.10",
-            "dom4j:dom4j:1.6.1"
+            "dom4j:dom4j:1.6.1",
+            // https://mvnrepository.com/artifact/com.google.code.gson/gson
+            'com.google.code.gson:gson:2.8.0'
+
     )
 }
 // 为编译器配置编码，防止某些情况下编译出现乱码的情况

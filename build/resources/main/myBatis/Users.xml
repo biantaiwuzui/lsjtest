@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ezd.dao.UsersDao">
+
+    <!--通过<resultMap>映射实体类属性名和表的字段名对应关系 -->
+
+    <resultMap id="users" type="Users">
+        <!-- 用id属性来映射主键字段 -->
+        <id property="userId" column="userId"></id>
+        <!-- 用result属性来映射非主键字段 -->
+        <result property="userName" column="userName" />
+        <result property="userType" column="userType" />
+        <result property="token" column="token" />
+        <association property="userInfo" resultMap="edu.ezd.dao.UserInfoDao.userInfo"></association>
+        <collection property="user_roles" resultMap="edu.ezd.dao.User_roleDao.user_role"></collection>
+        <collection property="user_enterprises" resultMap="edu.ezd.dao.User_enterpriseDao.user_enterprise"></collection>
+        <collection property="feedBacks" resultMap="edu.ezd.dao.FeedBackDao.feedBack"></collection>
+        <collection property="articles" resultMap="edu.ezd.dao.ArticleDao.article"></collection>
+        <collection property="browses" resultMap="edu.ezd.dao.BrowseDao.browse"></collection>
+        <collection property="comments" resultMap="edu.ezd.dao.CommentsDao.comments"></collection>
+        <collection property="theAttractionApplicants" resultMap="edu.ezd.dao.TheAttractionApplicantDao.theAttractionApplicant"></collection>
+        <collection property="interviews" resultMap="edu.ezd.dao.InterviewDao.interview"></collection>
+        <collection property="userTotal" resultMap="edu.ezd.dao.UserTotalDao.userTotal"></collection>
+        <collection property="verification" resultMap="edu.ezd.dao.VerificationDao.verification"></collection>
+
+    </resultMap>
+
+</mapper>

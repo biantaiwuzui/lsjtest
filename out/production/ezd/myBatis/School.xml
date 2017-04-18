@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ezd.dao.SchoolDao">
+
+    <!--通过<resultMap>映射实体类属性名和表的字段名对应关系 -->
+
+    <resultMap id="school" type="School">
+        <!-- 用id属性来映射主键字段 -->
+        <id property="schoolId" column="schoolId"></id>
+        <!-- 用result属性来映射非主键字段 -->
+        <result property="schoolName" column="schoolName" />
+        <result property="schoolAddress" column="schoolAddress" />
+        <result property="schert_detail" column="schert_detail" />
+        <result property="schoolCount" column="schoolCount" />
+        <!-- 一对一关联 -->
+        <association property="schoolType"  resultMap="edu.ezd.dao.SchoolTypeDao.schoolType"></association>
+
+    </resultMap>
+
+</mapper>

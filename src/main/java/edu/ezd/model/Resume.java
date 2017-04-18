@@ -89,18 +89,5 @@ public class Resume {
         this.interview = interview;
     }
 
-    @Override
-    public String toString() {
-        return "Resume{" +
-                "resumeId=" + resumeId +
-                ", name='" + name + '\'' +
-                ", birthday=" + birthday +
-                ", id_card='" + id_card + '\'' +
-                ", placeoforigin='" + placeoforigin + '\'' +
-                ", workexperience='" + workexperience + '\'' +
-                ", selfevaluation='" + selfevaluation + '\'' +
-                ", userInfo=" + userInfo +
-                ", interview=" + interview +
-                '}';
-    }
+
 }

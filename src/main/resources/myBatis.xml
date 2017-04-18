@@ -5,20 +5,21 @@
 
 <configuration>
 
-    <settings>
-        <!-- 使用jdbc的getGeneratedKeys获取数据库自增主键值 -->
+    <!--<settings>
+        &lt;!&ndash; 使用jdbc的getGeneratedKeys获取数据库自增主键值 &ndash;&gt;
         <setting name="useGeneratedKeys" value="true"/>
-        <!-- 使用列名替换列名 默认：true
+        &lt;!&ndash; 使用列名替换列名 默认：true
                select name as title from table
-               -->
+               &ndash;&gt;
         <setting name="useColumnLabel" value="true" />
-        <!-- 开启驼峰命名转化：Table(create_time) -> Entity(createTime) -->
+        &lt;!&ndash; 开启驼峰命名转化：Table(create_time) -> Entity(createTime) &ndash;&gt;
         <setting name="mapUnderscoreToCamelCase" value="true" />
-    </settings>
+    </settings>-->
 <!-- 给所有实体类添加别名，别名请参考下面注释-->
     <typeAliases>
         <!--  <typeAlias type="edu.ezd.model.Users" alias="Users"/> -->
         <package name="edu.ezd.model"/>
     </typeAliases>
+
 
 </configuration>

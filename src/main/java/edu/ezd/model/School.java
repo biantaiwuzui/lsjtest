@@ -60,15 +60,5 @@ public class School {
         this.schoolType = schoolType;
     }
 
-    @Override
-    public String toString() {
-        return "School{" +
-                "schoolId=" + schoolId +
-                ", schoolName='" + schoolName + '\'' +
-                ", schoolAddress='" + schoolAddress + '\'' +
-                ", schert_detail='" + schert_detail + '\'' +
-                ", schoolCount=" + schoolCount +
-                ", schoolType=" + schoolType +
-                '}';
-    }
+
 }

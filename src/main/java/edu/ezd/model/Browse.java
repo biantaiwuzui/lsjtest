@@ -33,12 +33,5 @@ public class Browse {
         this.article = article;
     }
 
-    @Override
-    public String toString() {
-        return "Browse{" +
-                "browseId=" + browseId +
-                ", users=" + users +
-                ", article=" + article +
-                '}';
-    }
+
 }

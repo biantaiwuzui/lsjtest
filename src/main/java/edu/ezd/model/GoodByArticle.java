@@ -42,13 +42,5 @@ public class GoodByArticle {
         this.article = article;
     }
 
-    @Override
-    public String toString() {
-        return "GoodByArticle{" +
-                "goodByArticleId=" + goodByArticleId +
-                ", getGoodByArticle_statue=" + getGoodByArticle_statue +
-                ", users=" + users +
-                ", article=" + article +
-                '}';
-    }
+
 }

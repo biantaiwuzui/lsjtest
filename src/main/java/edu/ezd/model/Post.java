@@ -90,17 +90,5 @@ public class Post {
         this.positionName = positionName;
     }
 
-    @Override
-    public String toString() {
-        return "Post{" +
-                "postId=" + postId +
-                ", post_title='" + post_title + '\'' +
-                ", sendPostDate=" + sendPostDate +
-                ", contacts='" + contacts + '\'' +
-                ", contactsInformation='" + contactsInformation + '\'' +
-                ", recruitmentNumber='" + recruitmentNumber + '\'' +
-                ", enterprise=" + enterprise +
-                ", recruitmentDetailss=" + recruitmentDetailss +
-                '}';
-    }
+
 }
