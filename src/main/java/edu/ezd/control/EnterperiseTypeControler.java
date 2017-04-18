@@ -20,14 +20,14 @@ import java.util.List;
  * Created by JayJay on 2017/4/17.
  */
 @Controller
-@RequestMapping("/enterpriserType")
-public class EnterperiserTypeControler {
-    private static final Logger log = Logger.getLogger(EnterperiserTypeControler.class);
+@RequestMapping("/enterpriseType")
+public class EnterperiseTypeControler {
+    private static final Logger log = Logger.getLogger(EnterperiseTypeControler.class);
 
     @Resource
     private EnterpriseTypeService enterpriseTypeService;
 
-    @RequestMapping(value = "/getType", produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/getType", produces = "application/json;charset=UTF-8")
     @ResponseBody
     public String getType(HttpServletResponse response) throws UnsupportedEncodingException {
         List<EnterpriseType> list =  enterpriseTypeService.getEnterpriseList();
