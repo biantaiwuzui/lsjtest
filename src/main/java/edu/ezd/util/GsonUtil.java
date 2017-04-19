@@ -1,6 +1,7 @@
 package edu.ezd.util;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 /**
  * Created by JayJay on 2017/4/17.
@@ -12,14 +13,18 @@ public class GsonUtil {
     private static Gson gson;
     //初始化
     static {
-        gson = new Gson();
+        gson = new GsonBuilder()
+                .setDateFormat("yyyy-MM-dd HH:mm:ss")
+                .create();
     }
     //返回gson
     public static Gson getGson(){
         if(gson!=null)
             return gson;
         else
-            return gson = new Gson();
+            return gson = new GsonBuilder()
+                    .setDateFormat("yyyy-MM-dd HH:mm:ss")
+                    .create();
     }
 
     /**
