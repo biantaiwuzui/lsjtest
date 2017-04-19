@@ -3,6 +3,7 @@ package edu.ezd.control.app;
 import com.google.gson.Gson;
 import edu.ezd.model.EnterpriseType;
 import edu.ezd.service.EnterpriseTypeService;
+import edu.ezd.util.GsonUtil;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,7 +32,7 @@ public class EnterperiseTypeControler {
     public String getType(HttpServletResponse response) throws UnsupportedEncodingException {
         List<EnterpriseType> list =  enterpriseTypeService.getEnterpriseList();
         Gson gson = new Gson();
-        String json = gson.toJson(list);
+        String json = GsonUtil.toJson(list);
         return json;
     }
     @GetMapping

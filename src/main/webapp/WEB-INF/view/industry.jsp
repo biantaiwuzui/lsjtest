@@ -9,26 +9,47 @@
 <body>
 <div style="width: 100%">
 <div id="right" style="height: 400px;max-height: 400px; width: 300px;overflow-y: auto;float: left">
-    <ul>
-        <c:forEach items="${industryList}" var="i">
+    <ul id="rightbody">
+        <%--<c:forEach items="${industryList}" var="i">
             <li><button  class="right" id="${i.industryId}">${i.industryName}</button></li>
-        </c:forEach>
+        </c:forEach>--%>
     </ul>
 
 </div>
 <div id="left" style="float: left">
     <ul id="leftbody">
-        <c:forEach items="${industryList.get(0).positionNames}" var="p">
+       <%-- <c:forEach items="${industryList.get(0).positionNames}" var="p">
             <li>${p.pname}</li>
-        </c:forEach>
+        </c:forEach>--%>
     </ul>
 </div>
 </div>
 <script>
-    $(".right").on("click",function () {
+    $(document).ready(function(){
         $.ajax({
             type: "get",
-            url: "${pageContext.request.contextPath}/positionName/"+this.id,
+            url: "${pageContext.request.contextPath}/industryType",
+            success: function(data){
+                var str="";
+                $.each(data,function(i,v){
+                    str+="<li><button id="+v.industryId+">";
+                    str+=v.industryName+"</button></li>";
+
+                });
+                $("#rightbody").html(str);
+
+            },
+            dataType: "json"
+        });
+        });
+
+
+
+
+   /* $(".right").on("click",function () {
+        $.ajax({
+            type: "get",
+            url: "${pageContext.request.contextPath}/industryType/"+this.id,
             success: function(data){
                 var str="";
                 $.each(data,function(i,v){
@@ -41,7 +62,7 @@
             },
             dataType: "json"
         });
-    });
+    });*/
 </script>
 <%--<div id="body"><c:forEach items="${industryList}" var="i">
     <p><span id="${i.industryId}">${i.industryName}</span>      --->

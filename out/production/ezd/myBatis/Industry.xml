@@ -22,8 +22,7 @@
             i.industryId,
             i.industryName,
             p.PositionNameId,
-            p.pname,
-            p.industry_Name
+            p.pname
         FROM ezd_industry i
         JOIN ezd_PositionName p
           on p.industry_Name = i.industryId
@@ -35,11 +34,10 @@
         i.industryId,
         i.industryName,
         p.PositionNameId,
-        p.pname,
-        p.industry_Name,
+        p.pname
         FROM ezd_industry i
         JOIN ezd_PositionName p
-        on p.industry_Name = i.industryId;
+        on p.industry_Name = i.industryId
         WHERE i.industryId = #{industryId}
 
     </select>

@@ -13,18 +13,13 @@ public class GsonUtil {
     private static Gson gson;
     //初始化
     static {
-        gson = new GsonBuilder()
-                .setDateFormat("yyyy-MM-dd HH:mm:ss")
+        gson = new GsonBuilder()//
+                .setDateFormat("yyyy-MM-dd HH:mm:ss")//
                 .create();
     }
     //返回gson
     public static Gson getGson(){
-        if(gson!=null)
-            return gson;
-        else
-            return gson = new GsonBuilder()
-                    .setDateFormat("yyyy-MM-dd HH:mm:ss")
-                    .create();
+       return gson;
     }
 
     /**

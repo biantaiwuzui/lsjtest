@@ -53,7 +53,10 @@ dependencies {
             "commons-codec:commons-codec:1.10",
             "dom4j:dom4j:1.6.1",
             // https://mvnrepository.com/artifact/com.google.code.gson/gson
-            'com.google.code.gson:gson:2.8.0'
+            'com.google.code.gson:gson:1.7.1',
+            "net.sf.json-lib:json-lib:2.3:jdk15"
+
+
 
     )
 }

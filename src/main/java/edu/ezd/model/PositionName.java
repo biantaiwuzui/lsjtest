@@ -28,13 +28,13 @@ public class PositionName {
         this.pname = pname;
     }
 
-    public Industry getIndustry() {
+   /* public Industry getIndustry() {
         return industry;
     }
 
     public void setIndustry(Industry industry) {
         this.industry = industry;
-    }
+    }*/
 
     public List<Post> getPosts() {
         return posts;
