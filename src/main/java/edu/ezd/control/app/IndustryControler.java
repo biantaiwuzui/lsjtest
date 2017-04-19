@@ -1,4 +1,4 @@
-package edu.ezd.control;
+package edu.ezd.control.app;
 
 import com.google.gson.Gson;
 import edu.ezd.model.Industry;

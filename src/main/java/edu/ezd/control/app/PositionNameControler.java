@@ -1,4 +1,4 @@
-package edu.ezd.control;
+package edu.ezd.control.app;
 
 import edu.ezd.model.PositionName;
 import edu.ezd.service.PositionNameService;
@@ -22,7 +22,7 @@ public class PositionNameControler {
     private PositionNameService positionNameService;
 
 
-    @GetMapping(value = "/{industryId}" ,produces = {"application/json;charset=UTF-8"})
+    @GetMapping(value = "/{industryId}" ,produces = "application/json;charset=UTF-8")
     @ResponseBody
     public String getIndustry(@PathVariable int industryId){
         List<PositionName> positionNames = positionNameService.getPositionName(industryId);

@@ -1,4 +1,4 @@
-package edu.ezd.control;
+package edu.ezd.control.app;
 
 import com.google.gson.Gson;
 import edu.ezd.model.EnterpriseType;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Method;
 import java.util.List;
 
 /**
