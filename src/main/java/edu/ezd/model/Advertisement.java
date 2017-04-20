@@ -14,7 +14,7 @@ public class Advertisement {
     private String advertisingContact; // 广告联系人
     private String advertisingPosition; //广告位置
     private String advertisingType; //广告类型
-    private String advertisingStatue;  // 广告状态
+    private int advertisingStatue;  // 广告状态
 
     public int getAdvertisementId() {
         return advertisementId;
@@ -80,26 +80,11 @@ public class Advertisement {
         this.advertisingType = advertisingType;
     }
 
-    public String getAdvertisingStatue() {
+    public int getAdvertisingStatue() {
         return advertisingStatue;
     }
 
-    public void setAdvertisingStatue(String advertisingStatue) {
+    public void setAdvertisingStatue(int advertisingStatue) {
         this.advertisingStatue = advertisingStatue;
-    }
-
-    @Override
-    public String toString() {
-        return "Advertisement{" +
-                "advertisementId=" + advertisementId +
-                ", advertisementImg='" + advertisementImg + '\'' +
-                ", advertisementTitle='" + advertisementTitle + '\'' +
-                ", advertisementContent='" + advertisementContent + '\'' +
-                ", advertisingUrl='" + advertisingUrl + '\'' +
-                ", advertisingContact='" + advertisingContact + '\'' +
-                ", advertisingPosition='" + advertisingPosition + '\'' +
-                ", advertisingType='" + advertisingType + '\'' +
-                ", advertisingStatue='" + advertisingStatue + '\'' +
-                '}';
     }
 }

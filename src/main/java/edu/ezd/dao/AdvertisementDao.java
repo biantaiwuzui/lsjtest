@@ -1,12 +1,11 @@
 package edu.ezd.dao;
 
 import edu.ezd.model.Advertisement;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * Created by JayJay on 2017/4/10.
- */
+
 public interface AdvertisementDao {
     /**
      * 查询所有
@@ -14,16 +13,16 @@ public interface AdvertisementDao {
      */
     List<Advertisement> findAll();
     /**
-     * 修改或者删除数据
+     * 添加广告
      */
-    void save();
+    void save(Advertisement advertisement);
 
     /**
      * 修改或者删除数据
      */
     void update();
     /**
-     * 修改或者删除数据
+     * 根据id查询某个广告
      */
-    Advertisement getAdvertisement();
+    Advertisement getAdvertisement(int id);
 }

@@ -32,69 +32,69 @@
     <!--  查询所有广告-->
     <select id="finaAll" resultMap="advertisements">
         SELECT
-            AdvertisementId,
-            AdvertisementImg,
-            AdvertisementTitle,
-            AdvertisementCotent,
-            AdvertisingUrl,
-            AdvertisingContact,
-            AdvertisingPosition,
-            AdvertisingType,
-            AdvertisingStatue
+            advertisementId,
+            advertisementImg,
+            advertisementTitle,
+            advertisementContent,
+            advertisingUrl,
+            advertisingContact,
+            advertisingPosition,
+            advertisingType,
+            advertisingStatue
          FROM ezd_advertisement;
     </select>
     <!-- 根据id查询单个广告 -->
     <select id="getAdvertisement" parameterType="int" resultType="Advertisement">
         SELECT
-            AdvertisementId,
-            AdvertisementImg,
-            AdvertisementTitle,
-            AdvertisementCotent,
-            AdvertisingUrl,
-            AdvertisingContact,
-            AdvertisingPosition,
-            AdvertisingType,
-            AdvertisingStatue
+            advertisementId,
+            advertisementImg,
+            advertisementTitle,
+            advertisementContent,
+            advertisingUrl,
+            advertisingContact,
+            advertisingPosition,
+            advertisingType,
+            advertisingStatue
         FROM ezd_advertisement
-        WHERE AdvertisementId = #{AdvertisementId}
+        WHERE advertisementId = #{advertisementId}
     </select>
 
     <!-- 修改广告信息 -->
-    <update id="update">
+    <update id="update" parameterType="Advertisement">
         UPDATE ezd_advertisement
             <set>
-                <if test="AdvertisementImg != null">AdvertisementImg = #{AdvertisementImg},</if>
-                <if test="AdvertisementTitle != null">AdvertisementTitle = #{AdvertisementTitle},</if>
-                <if test="AdvertisementCotent != null">AdvertisementCotent = #{AdvertisementCotent},</if>
-                <if test="AdvertisingUrl != null">AdvertisingUrl = #{AdvertisingUrl},</if>
-                <if test="AdvertisingContact != null">AdvertisingContact = #{AdvertisingContact},</if>
-                <if test="AdvertisingPosition != null">AdvertisingPosition = #{AdvertisingPosition},</if>
-                <if test="AdvertisingType != null">AdvertisingType = #{AdvertisingType},</if>
-                <if test="AdvertisingStatue != null">AdvertisingStatue = #{AdvertisingStatue},</if>
+                <if test="advertisementImg != null">advertisementImg = #{advertisementImg},</if>
+                <if test="advertisementTitle != null">advertisementTitle = #{advertisementTitle},</if>
+                <if test="advertisementCotent != null">advertisementContent = #{advertisementContent},</if>
+                <if test="advertisingUrl != null">advertisingUrl = #{advertisingUrl},</if>
+                <if test="advertisingContact != null">advertisingContact = #{advertisingContact},</if>
+                <if test="advertisingPosition != null">advertisingPosition = #{advertisingPosition},</if>
+                <if test="advertisingType != null">advertisingType = #{advertisingType},</if>
+                <if test="advertisingStatue != null">advertisingStatue = #{advertisingStatue},</if>
             </set>
-        WHERE AdvertisementId = #{AdvertisementId}
+        WHERE advertisementId = #{advertisementId}
     </update>
     <!-- 新增广告-->
     <insert id="save" useGeneratedKeys="true" keyProperty="advertisementId" parameterType="Advertisement">
         INSERT INTO ezd_advertisement(
-                AdvertisementImg,
-                AdvertisementTitle,
-                AdvertisementCotent,
-                AdvertisingUrl,
-                AdvertisingContact,
-                AdvertisingPosition,
-                AdvertisingType,
-                AdvertisingStatue
+                advertisementImg,
+                advertisementTitle,
+                advertisementContent,
+                advertisingUrl,
+                advertisingContact,
+                advertisingPosition,
+                advertisingType,
+                advertisingStatue
        )
         VALUES (
-                #{AdvertisementImg},
-                #{AdvertisementTitle},
-                #{AdvertisementCotent},
-                #{AdvertisingUrl},
-                #{AdvertisingContact},
-                #{AdvertisingPosition},
-                #{AdvertisingType},
-                #{AdvertisingStatue}
+                #{advertisementImg},
+                #{advertisementTitle},
+                #{advertisementContent},
+                #{advertisingUrl},
+                #{advertisingContact},
+                #{advertisingPosition},
+                #{advertisingType},
+                #{advertisingStatue}
         )
 
     </insert>

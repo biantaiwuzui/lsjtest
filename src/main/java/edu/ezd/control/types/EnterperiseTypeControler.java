@@ -1,4 +1,4 @@
-package edu.ezd.control.app;
+package edu.ezd.control.types;
 
 import com.google.gson.Gson;
 import edu.ezd.model.EnterpriseType;

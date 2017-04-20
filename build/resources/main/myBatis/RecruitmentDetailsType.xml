@@ -15,4 +15,24 @@
         <collection property="recruitmentDetailss" resultMap="edu.ezd.dao.RecruitmentDetailsDao.recruitmentDetails" ></collection>
     </resultMap>
 
+    <select id="findAll" resultType="recruitmentDetailsType">
+        SELECT
+          recruitmentDetailsTypeId,
+          recruitmentDetailsTypeName
+        FROM ezd_recruitmentDetailsType
+    </select>
+
+    <insert id="save" useGeneratedKeys="true" keyProperty="recruitmentDetailsTypeId" parameterType="RecruitmentDetailsType">
+        INSERT INTO ezd_recruitmentDetailsType(recruitmentDetailsTypeName)
+        VALUES (#{recruitmentDetailsTypeName})
+    </insert>
+
+    <update id="update" parameterType="RecruitmentDetailsType">
+        UPDATE ezd_recruitmentDetailsType
+          <set>
+              <if test="recruitmentDetailsTypeName != null">recruitmentDetailsTypeName = #{recruitmentDetailsTypeName}</if>
+          </set>
+        WHERE recruitmentDetailsTypeId=#{recruitmentDetailsTypeId}
+    </update>
+
 </mapper>

@@ -20,12 +20,8 @@
     <select id="findAll"  resultMap="industry">
         SELECT
             i.industryId,
-            i.industryName,
-            p.PositionNameId,
-            p.pname
+            i.industryName
         FROM ezd_industry i
-        JOIN ezd_PositionName p
-          on p.industry_Name = i.industryId
 
     </select>
 

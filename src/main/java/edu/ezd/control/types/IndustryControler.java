@@ -1,4 +1,4 @@
-package edu.ezd.control.app;
+package edu.ezd.control.types;
 
 import edu.ezd.model.Industry;
 import edu.ezd.model.PositionName;
@@ -7,7 +7,6 @@ import edu.ezd.service.PositionNameService;
 import edu.ezd.util.GsonUtil;
 import edu.ezd.util.JsonUtils;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

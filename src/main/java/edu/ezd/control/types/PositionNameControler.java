@@ -1,4 +1,4 @@
-package edu.ezd.control.app;
+package edu.ezd.control.types;
 
 import edu.ezd.model.PositionName;
 import edu.ezd.service.PositionNameService;

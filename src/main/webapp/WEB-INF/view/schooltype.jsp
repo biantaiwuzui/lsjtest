@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<form action="${pageContext.request.contextPath}/rdType" id="frm" method="post">
+<form action="${pageContext.request.contextPath}/schoolType" id="frm" method="post">
     <input type="text" id="name" name="name" />
     <button id="tj">添加</button>
 </form>
@@ -24,9 +24,9 @@
     <tbody id="tbody"></tbody>
 </table>
 
-<form:form action="/rdType/edit" method="PUT">
-   id: <input type="text" id="rid" name="recruitmentDetailsTypeId">
-   name: <input type="text" id="rname" name="recruitmentDetailsTypeName">
+<form:form action="/schoolType/edit" method="PUT" modelAttribute="schoolType">
+   id: <input type="text" id="sid" name="schoolTypeId">
+   name: <input type="text" id="sname" name="schoolTypeName">
     <button id="edit" type="submit">edit</button>
 </form:form>
 
@@ -34,14 +34,14 @@
     $(document).ready(function () {
         $.ajax({
             type: "get",
-            url: "${pageContext.request.contextPath}/rdType/findAll",
+            url: "${pageContext.request.contextPath}/schoolType/findAll",
             dataType: "json",
             success: function(data){
                 var str="";
                 $.each(data,function(i,v){
                     str+="<tr>" ;
-                    str+="<td>"+v.recruitmentDetailsTypeId+"</td>";
-                    str+="<td>"+v.recruitmentDetailsTypeName+"</td>";
+                    str+="<td>"+v.schoolTypeId+"</td>";
+                    str+="<td>"+v.schoolTypeName+"</td>";
                     str+="</tr>";
 
                 });

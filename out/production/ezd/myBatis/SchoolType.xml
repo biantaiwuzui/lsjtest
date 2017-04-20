@@ -15,4 +15,21 @@
         <collection property="schools" resultMap="edu.ezd.dao.SchoolDao.school" ></collection>
     </resultMap>
 
+    <select id="findAll" resultType="SchoolType">
+        SELECT
+            schoolTypeId,
+            schoolTypeName
+        FROM ezd_schoolType
+    </select>
+
+    <insert id="save" useGeneratedKeys="true" keyProperty="schoolTypeId" parameterType="SchoolType">
+        INSERT INTO ezd_schoolType(schoolTypeName)
+        VALUES (#{schoolTypeName})
+    </insert>
+
+    <update id="update" parameterType="SchoolType">
+        UPDATE ezd_schoolType
+          SET schoolTypeName = #{schoolTypeName}
+        WHERE schoolTypeId = #{schoolTypeId}
+    </update>
 </mapper>
