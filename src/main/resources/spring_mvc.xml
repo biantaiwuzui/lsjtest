@@ -18,4 +18,8 @@
     </bean>
 
 
+	
+    <mvc:resources mapping="/js/**" location="/assets/javascript/"></mvc:resources>
+    <mvc:resources mapping="/img/**" location="/assets/img/"></mvc:resources>
+    <mvc:resources mapping="/css/**" location="/assets/stylesheat/"></mvc:resources>
 </beans>
