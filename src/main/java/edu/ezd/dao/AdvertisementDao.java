@@ -20,7 +20,7 @@ public interface AdvertisementDao {
     /**
      * 修改或者删除数据
      */
-    void update(Advertisement advertisement);
+    void update();
     /**
      * 根据id查询某个广告
      */
