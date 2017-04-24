@@ -11,7 +11,7 @@
 <html>
 <head>
     <title>Title</title>
-    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
 </head>
 <body>
 
@@ -24,7 +24,7 @@
     <tbody id="tbody"></tbody>
 </table>
 
-<form:form action="/schoolType/edit" method="PUT" modelAttribute="schoolType">
+<form:form action="${pageContext.request.contextPath}/schoolType/edit" method="PUT" modelAttribute="schoolType">
    id: <input type="text" id="sid" name="schoolTypeId">
    name: <input type="text" id="sname" name="schoolTypeName">
     <button id="edit" type="submit">edit</button>

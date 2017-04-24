@@ -1,5 +1,6 @@
 package edu.ezd.model;
 
+import netscape.security.UserTarget;
 
 import java.util.List;
 
