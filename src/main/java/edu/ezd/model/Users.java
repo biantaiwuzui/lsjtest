@@ -1,6 +1,5 @@
 package edu.ezd.model;
 
-import netscape.security.UserTarget;
 
 import java.util.List;
 
@@ -156,5 +155,27 @@ public class Users {
         this.theAttractionApplicants = theAttractionApplicants;
     }
 
-
+  /*  @Override
+    public String toString() {
+        StringBuffer sbf = new StringBuffer();
+        sbf.append("Users{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", userType='" + userType + '\'' +
+                ", token='" + token + '\'' +
+                ", user_roles=" + user_roles +
+                ", userInfo=" + userInfo +
+                ", user_enterprises=" + user_enterprises +
+                ", feedBacks=" + feedBacks +
+                ", articles=" + articles +
+                ", browses=" + browses +
+                ", comments=" + comments +
+                ", theAttractionApplicants=" + theAttractionApplicants +
+                ", interviews=" + interviews +
+                ", userTotal=" + userTotal +
+                ", verification=" + verification +
+                '}');
+        return sbf.toString();
+    }*/
 }

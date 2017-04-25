@@ -63,5 +63,17 @@ public class Comments {
         this.goodByCommentss = goodByCommentss;
     }
 
-
+   /* @Override
+    public String toString() {
+        StringBuffer sdf = new StringBuffer();
+        sdf.append("Comments{" +
+                "commentId=" + commentId +
+                ", commentContent='" + commentContent + '\'' +
+                ", commentDate=" + commentDate +
+                ", article=" + article +
+                ", users=" + users +
+                ", goodByCommentss=" + goodByCommentss +
+                '}');
+        return sdf.toString();
+    }*/
 }

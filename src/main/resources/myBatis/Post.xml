@@ -22,9 +22,4 @@
         <collection property="recruitmentDetailss" resultMap="edu.ezd.dao.RecruitmentDetailsDao.recruitmentDetails" ></collection>
     </resultMap>
 
-
-    <select id="findAll" resultMap="post">
-
-    </select>
-
 </mapper>

@@ -30,7 +30,7 @@
 
 
     <!--  查询所有广告-->
-    <select id="finaAll" resultMap="advertisements">
+    <select id="findAll" resultMap="advertisements">
         SELECT
             advertisementId,
             advertisementImg,

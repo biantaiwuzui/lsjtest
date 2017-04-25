@@ -87,4 +87,19 @@ public class Advertisement {
     public void setAdvertisingStatue(int advertisingStatue) {
         this.advertisingStatue = advertisingStatue;
     }
+
+/*    @Override
+    public String toString() {
+        return "Advertisement{" +
+                "advertisementId=" + advertisementId +
+                ", advertisementImg='" + advertisementImg + '\'' +
+                ", advertisementTitle='" + advertisementTitle + '\'' +
+                ", advertisementContent='" + advertisementContent + '\'' +
+                ", advertisingUrl='" + advertisingUrl + '\'' +
+                ", advertisingContact='" + advertisingContact + '\'' +
+                ", advertisingPosition='" + advertisingPosition + '\'' +
+                ", advertisingType='" + advertisingType + '\'' +
+                ", advertisingStatue=" + advertisingStatue +
+                '}';
+    }*/
 }

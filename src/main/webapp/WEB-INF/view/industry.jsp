@@ -4,7 +4,7 @@
 <head>
     <title>Title</title>
     <meta charset="UTF-8">
-    <script src="${pageContext.request.contextPath}/js/jquery.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/javascript/jquery-1.11.1.js"></script>
 </head>
 <body>
 <div style="width: 100%">

@@ -16,8 +16,8 @@
         <result property="contentBytheAttraction" column="contentBytheAttraction" />
         <result property="venue" column="venue" />
         <result property="endTime" column="endTime" />
-        <!--  一对多关联 -->
-        <collection property="theAttractionApplicants" resultMap="edu.ezd.dao.TheAttractionApplicantDao.theAttractionApplicant" ></collection>
+       <!-- &lt;!&ndash;  一对多关联 &ndash;&gt;
+        <collection property="theAttractionApplicants" resultMap="edu.ezd.dao.TheAttractionApplicantDao.theAttractionApplicant" ></collection>-->
     </resultMap>
 
 </mapper>

@@ -1,7 +1,13 @@
 package edu.ezd.dao;
 
-/**
- * Created by JayJay on 2017/4/11.
- */
-public interface BrowseDao {
+import com.sun.rowset.internal.BaseRow;
+
+import java.util.List;
+
+    /**
+     * Created by JayJay on 2017/4/11.
+     */
+    public interface BrowseDao {
+
+        List<BaseRow> getSome(int articleId);
 }

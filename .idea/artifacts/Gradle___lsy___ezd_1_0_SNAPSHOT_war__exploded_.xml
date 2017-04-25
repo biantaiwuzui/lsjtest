@@ -13,6 +13,7 @@
         <element id="directory" name="classes">
           <element id="module-output" name="ezd_main" />
           <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+          <element id="module-output" name="ezd_test" />
           <element id="module-output" name="ezd" />
         </element>
         <element id="directory" name="lib">
@@ -47,6 +48,11 @@
           <element id="library" level="project" name="Gradle: commons-lang:commons-lang:2.4" />
           <element id="library" level="project" name="Gradle: net.sf.ezmorph:ezmorph:1.0.6" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="file-copy" path="D:/gradle-3.1/caches/modules-2/files-2.1/commons-fileupload/commons-fileupload/1.3.1/c621b54583719ac0310404463d6d99db27e1052c/commons-fileupload-1.3.1.jar" />
+          <element id="file-copy" path="D:/gradle-3.1/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" />
+          <element id="library" level="project" name="Gradle: javax:javaee-web-api:7.0" />
+          <element id="library" level="project" name="Gradle: junit:junit:4.11" />
+          <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
         </element>
       </element>
     </root>

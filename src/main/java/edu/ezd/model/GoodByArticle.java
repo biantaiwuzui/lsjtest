@@ -42,5 +42,16 @@ public class GoodByArticle {
         this.article = article;
     }
 
-
+//    @Override
+//    public String
+//    toString() {
+//        StringBuffer sdf = new StringBuffer();
+//        sdf.append("GoodByArticle{" +
+//                "goodByArticleId=" + goodByArticleId +
+//                ", getGoodByArticle_statue=" + getGoodByArticle_statue +
+//                ", users=" + users +
+//                ", article=" + article +
+//                '}');
+//        return sdf.toString();
+//    }
 }

@@ -15,7 +15,7 @@ public class TheAttraction {
     private String contentBytheAttraction;  //大招会内容
     private String venue;   //举办地址
     private Date endTime;   //结束时间
-    private List<TheAttractionApplicant> theAttractionApplicants;
+   /* private List<TheAttractionApplicant> theAttractionApplicants;*/
 
     public int getTheAttracionId() {
         return theAttracionId;
@@ -74,13 +74,13 @@ public class TheAttraction {
     }
 
 
-    public List<TheAttractionApplicant> getTheAttractionApplicants() {
+ /*   public List<TheAttractionApplicant> getTheAttractionApplicants() {
         return theAttractionApplicants;
     }
 
     public void setTheAttractionApplicants(List<TheAttractionApplicant> theAttractionApplicants) {
         this.theAttractionApplicants = theAttractionApplicants;
-    }
+    }*/
 
 
 }
