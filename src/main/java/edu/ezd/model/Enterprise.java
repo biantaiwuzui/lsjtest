@@ -13,11 +13,12 @@ public class Enterprise {
     private String enterpriseAddress;   //企业地址
     private String enterpriseScale; //企业规模
     private String enterpriseIntroduction;  //企业介绍
+    private int industry_Name;
+    private int enterpriseTypeId;
     private EnterpriseType enterpriseType;  //企业类型
     private List<Post> posts;   //企业职位
     private Industry industry; //行业
     private List<Interview> interviews; //面试的人
-
 
     public int getEnterpriseId() {
         return enterpriseId;
@@ -67,6 +68,22 @@ public class Enterprise {
         this.enterpriseIntroduction = enterpriseIntroduction;
     }
 
+    public int getIndustry_Name() {
+        return industry_Name;
+    }
+
+    public void setIndustry_Name(int industry_Name) {
+        this.industry_Name = industry_Name;
+    }
+
+    public int getEnterpriseTypeId() {
+        return enterpriseTypeId;
+    }
+
+    public void setEnterpriseTypeId(int enterpriseTypeId) {
+        this.enterpriseTypeId = enterpriseTypeId;
+    }
+
     public EnterpriseType getEnterpriseType() {
         return enterpriseType;
     }
@@ -83,14 +100,6 @@ public class Enterprise {
         this.posts = posts;
     }
 
-    public List<Interview> getInterviews() {
-        return interviews;
-    }
-
-    public void setInterviews(List<Interview> interviews) {
-        this.interviews = interviews;
-    }
-
     public Industry getIndustry() {
         return industry;
     }
@@ -99,5 +108,11 @@ public class Enterprise {
         this.industry = industry;
     }
 
+    public List<Interview> getInterviews() {
+        return interviews;
+    }
 
+    public void setInterviews(List<Interview> interviews) {
+        this.interviews = interviews;
+    }
 }

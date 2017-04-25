@@ -5,8 +5,11 @@ package edu.ezd.model;
  */
 public class PostBrowse {
     private int postBrowseId;
+    private int browse_user;
+    private int postId;
     private Users users;
     private Post post;
+
 
     public int getPostBrowseId() {
         return postBrowseId;
@@ -14,6 +17,22 @@ public class PostBrowse {
 
     public void setPostBrowseId(int postBrowseId) {
         this.postBrowseId = postBrowseId;
+    }
+
+    public int getBrowse_user() {
+        return browse_user;
+    }
+
+    public void setBrowse_user(int browse_user) {
+        this.browse_user = browse_user;
+    }
+
+    public int getPostId() {
+        return postId;
+    }
+
+    public void setPostId(int postId) {
+        this.postId = postId;
     }
 
     public Users getUsers() {

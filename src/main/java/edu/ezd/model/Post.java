@@ -13,10 +13,13 @@ public class Post {
     private Date sendPostDate;   //发布时间
     private String contacts;     //联系人
     private String contactsInformation;  //联系人电话
-    private String recruitmentNumber;    //招聘让你输
+    private String recruitmentNumber;    //招聘人数
+    private int positionNameId;
+    private int enterpriseId;
     private Enterprise enterprise;   //企业信息
-    private List<RecruitmentDetails> recruitmentDetailss;    //岗位详情表
+    private RecruitmentDetails recruitmentDetails;    //岗位详情表
     private PositionName positionName; //岗位名称
+    private List<PostBrowse> postBrowses;   //浏览记录表
 
     public int getPostId() {
         return postId;
@@ -66,6 +69,22 @@ public class Post {
         this.recruitmentNumber = recruitmentNumber;
     }
 
+    public int getPositionNameId() {
+        return positionNameId;
+    }
+
+    public void setPositionNameId(int positionNameId) {
+        this.positionNameId = positionNameId;
+    }
+
+    public int getEnterpriseId() {
+        return enterpriseId;
+    }
+
+    public void setEnterpriseId(int enterpriseId) {
+        this.enterpriseId = enterpriseId;
+    }
+
     public Enterprise getEnterprise() {
         return enterprise;
     }
@@ -74,12 +93,12 @@ public class Post {
         this.enterprise = enterprise;
     }
 
-    public List<RecruitmentDetails> getRecruitmentDetailss() {
-        return recruitmentDetailss;
+    public RecruitmentDetails getRecruitmentDetails() {
+        return recruitmentDetails;
     }
 
-    public void setRecruitmentDetailss(List<RecruitmentDetails> recruitmentDetailss) {
-        this.recruitmentDetailss = recruitmentDetailss;
+    public void setRecruitmentDetails(RecruitmentDetails recruitmentDetails) {
+        this.recruitmentDetails = recruitmentDetails;
     }
 
     public PositionName getPositionName() {
@@ -90,5 +109,11 @@ public class Post {
         this.positionName = positionName;
     }
 
+    public List<PostBrowse> getPostBrowses() {
+        return postBrowses;
+    }
 
+    public void setPostBrowses(List<PostBrowse> postBrowses) {
+        this.postBrowses = postBrowses;
+    }
 }

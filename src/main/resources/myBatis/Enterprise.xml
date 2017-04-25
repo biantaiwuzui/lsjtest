@@ -15,11 +15,20 @@
         <result property="enterpriseAddress" column="enterpriseAddress" />
         <result property="enterpriseScale" column="enterpriseScale" />
         <result property="enterpriseIntroduction" column="enterpriseIntroduction" />
+        <result property="industry_Name" column="industry_Name" />
+        <result property="enterpriseTypeId" column="enterpriseTypeId" />
         <association property="enterpriseType" resultMap="edu.ezd.dao.EnterpriseTypeDao.enterpriseType"></association>
         <association property="industry" resultMap="edu.ezd.dao.IndustryDao.industry"></association>
         <collection property="posts"  resultMap="edu.ezd.dao.PostDao.post"></collection>
         <collection property="interviews"  resultMap="edu.ezd.dao.InterviewDao.interview"></collection>
 
     </resultMap>
+    <select id="findAll" resultType="enterprise">
+        select * from ezd.ezd_enterprise;
+    </select>
+
+    <select id="getEnterprise" parameterType="int" resultType="enterprise">
+        select * from ezd.ezd_enterprise where enterpriseId = #{enterpriseId};
+    </select>
 
 </mapper>

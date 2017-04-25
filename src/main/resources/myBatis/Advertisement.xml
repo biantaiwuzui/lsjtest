@@ -30,7 +30,7 @@
 
 
     <!--  查询所有广告-->
-    <select id="findAll" resultMap="advertisements">
+    <select id="finaAll" resultMap="advertisements">
         SELECT
             advertisementId,
             advertisementImg,
@@ -41,8 +41,7 @@
             advertisingPosition,
             advertisingType,
             advertisingStatue
-         FROM ezd_advertisement
-         WHERE advertisingStatue = 0
+         FROM ezd_advertisement;
     </select>
     <!-- 根据id查询单个广告 -->
     <select id="getAdvertisement" parameterType="int" resultType="Advertisement">

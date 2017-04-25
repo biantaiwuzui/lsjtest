@@ -5,22 +5,24 @@ package edu.ezd.model;
  * Created by JayJay on 2017/4/7.
  */
 public class RecruitmentDetails {
-    private int RecruitmentDetailsId;
+    private int recruitmentDetailsId;
     private String jobRequirements;      //工作要求
     private String genderRequirements;   //性别要求
     private String educationalRequirements;  //学历要求
     private String companyBenefits; //公司福利（五险一金）
     private String jobContent;   //工作内容
     private String salary;   //薪水
+    private int jobType;
+    private int postId;
     private Post post;  //关联的招聘信息表
     private RecruitmentDetailsType recruitmentDetailsType; //工作类型（实习或全职）
 
     public int getRecruitmentDetailsId() {
-        return RecruitmentDetailsId;
+        return recruitmentDetailsId;
     }
 
     public void setRecruitmentDetailsId(int recruitmentDetailsId) {
-        RecruitmentDetailsId = recruitmentDetailsId;
+        this.recruitmentDetailsId = recruitmentDetailsId;
     }
 
     public String getJobRequirements() {
@@ -39,7 +41,21 @@ public class RecruitmentDetails {
         this.genderRequirements = genderRequirements;
     }
 
+    public String getEducationalRequirements() {
+        return educationalRequirements;
+    }
 
+    public void setEducationalRequirements(String educationalRequirements) {
+        this.educationalRequirements = educationalRequirements;
+    }
+
+    public String getCompanyBenefits() {
+        return companyBenefits;
+    }
+
+    public void setCompanyBenefits(String companyBenefits) {
+        this.companyBenefits = companyBenefits;
+    }
 
     public String getJobContent() {
         return jobContent;
@@ -57,12 +73,20 @@ public class RecruitmentDetails {
         this.salary = salary;
     }
 
-    public RecruitmentDetailsType getRecruitmentDetailsType() {
-        return recruitmentDetailsType;
+    public int getJobType() {
+        return jobType;
     }
 
-    public void setRecruitmentDetailsType(RecruitmentDetailsType recruitmentDetailsType) {
-        this.recruitmentDetailsType = recruitmentDetailsType;
+    public void setJobType(int jobType) {
+        this.jobType = jobType;
+    }
+
+    public int getPostId() {
+        return postId;
+    }
+
+    public void setPostId(int postId) {
+        this.postId = postId;
     }
 
     public Post getPost() {
@@ -73,19 +97,11 @@ public class RecruitmentDetails {
         this.post = post;
     }
 
-    public String getEducationalRequirements() {
-        return educationalRequirements;
+    public RecruitmentDetailsType getRecruitmentDetailsType() {
+        return recruitmentDetailsType;
     }
 
-    public void setEducationalRequirements(String educationalRequirements) {
-        this.educationalRequirements = educationalRequirements;
-    }
-
-    public String getCompanyBenefits() {
-        return companyBenefits;
-    }
-
-    public void setCompanyBenefits(String companyBenefits) {
-        this.companyBenefits = companyBenefits;
+    public void setRecruitmentDetailsType(RecruitmentDetailsType recruitmentDetailsType) {
+        this.recruitmentDetailsType = recruitmentDetailsType;
     }
 }

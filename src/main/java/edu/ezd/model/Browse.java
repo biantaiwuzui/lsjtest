@@ -33,15 +33,5 @@ public class Browse {
         this.article = article;
     }
 
-   /* @Override
-    public String toString() {
-        StringBuffer sdf = new StringBuffer();
-        sdf.append("Browse{" +
-                "browseId=" + browseId +
-                ", users=" + users +
-                ", article=" + article +
-                '}');
-        return sdf.toString();
-    }*/
 
 }

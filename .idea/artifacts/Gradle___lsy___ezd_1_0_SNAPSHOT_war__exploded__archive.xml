@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : lsy : ezd-1.0-SNAPSHOT.war (exploded) archive">
+    <output-path>$PROJECT_DIR$/out/artifacts/Gradle___lsy___ezd_1_0_SNAPSHOT_war__exploded__archive</output-path>
+    <root id="archive" name="Gradle _ lsy _ ezd-1.0-SNAPSHOT.war (exploded) archive.war">
+      <element id="artifact" artifact-name="Gradle : lsy : ezd-1.0-SNAPSHOT.war (exploded)" />
+      <element id="artifact" artifact-name="Gradle : lsy : ezd-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: javax:javaee-web-api:7.0" />
+          <element id="library" level="project" name="Gradle: junit:junit:4.11" />
+          <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="ezd_test" />
+          <element id="module-output" name="ezd" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

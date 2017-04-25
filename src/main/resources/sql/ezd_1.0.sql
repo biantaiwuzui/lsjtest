@@ -52,12 +52,6 @@ CREATE TABLE ezd_userInfo(				-- 用户信息表
 );
 
 
-CREATE TABLE ezd_user_enterprise(
-	user_enterprise_id INT PRIMARY KEY AUTO_INCREMENT,
-	followCompany INT REFERENCES ezd_enterprise (enterpriseId), 	-- 关注企业
-	ConcernedPeople INT REFERENCES ezd_Users (userId),				-- 关注人
-	user_enterprise_statu INT CHECK(user_enterprise_statu = 0 OR user_enterprise_statu = 1) -- 关注状态，0 关注 1 取消关注
-);
 
 CREATE TABLE ezd_feedback(  		    -- 意见反馈表(具体不是很清楚)
 	feedBackId INT PRIMARY KEY AUTO_INCREMENT,  -- id
@@ -87,6 +81,12 @@ CREATE TABLE ezd_enterprise( 							-- 企业表
 	enterpriseTypeId INT REFERENCES ezd_enterpriseType (enterpriseTypeID)
 );
 
+CREATE TABLE ezd_user_enterprise(
+	user_enterprise_id INT PRIMARY KEY AUTO_INCREMENT,
+	followCompany INT REFERENCES ezd_enterprise (enterpriseId), 	-- 关注企业
+	ConcernedPeople INT REFERENCES ezd_Users (userId),				-- 关注人
+	user_enterprise_statu INT CHECK(user_enterprise_statu = 0 OR user_enterprise_statu = 1) -- 关注状态，0 关注 1 取消关注
+);
 
 CREATE TABLE ezd_enterpriseType(  						-- 企业类型表
 	enterpriseTypeID INT PRIMARY KEY AUTO_INCREMENT,
@@ -178,6 +178,13 @@ CREATE TABLE ezd_Post(											-- 企业招聘信息表
  	recruitmentNumber  VARCHAR(20) NOT NULL					-- 招聘人数
 	
 );
+-- 新增岗位浏览记录表（关联ezd_users表，ezd_Post表）
+create table ezd_postBrowse(
+	postBrowseId int primary key AUTO_INCREMENT,
+	browse_user int references ezd_users(userid),
+	postId int references ezd_Post(postId)
+	
+)
 
 -- 增加工作类型字段（关联ezd_recruitmentDetailsType）
 CREATE TABLE ezd_recruitmentDetails(							-- 岗位详情表
@@ -212,7 +219,7 @@ CREATE TABLE ezd_advertisement(										-- 广告表
 	AdvertisementId INT PRIMARY KEY AUTO_INCREMENT,
 	AdvertisementImg VARCHAR(300),								-- 广告图片
 	AdvertisementTitle VARCHAR(30),								-- 广告标题（超链接广告用的）
-	AdvertisementCotent VARCHAR(300),							-- 广告内容
+	AdvertisementContent VARCHAR(300),							-- 广告内容
 	AdvertisingUrl VARCHAR(50),									-- 广告链接
 	AdvertisingContact VARCHAR(20),								-- 广告联系人
 	AdvertisingPosition VARCHAR(30),							-- 广告位置

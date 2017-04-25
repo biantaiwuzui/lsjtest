@@ -12,14 +12,13 @@
     <title>添加广告</title>
 </head>
 <body>
-<form:form action="${pageContext.request.contextPath}/advertisement/add" modelAttribute="advertisement" method="post" enctype="multipart/form-data">
+<form:form action="${pageContext.request.contextPath}/advertisement/add" modelAttribute="advertisement" method="post">
     标题：<input type="text" name="advertisementTitle"> <br>
     内容:<input type="text" name="advertisementContent"><br>
     链接：<input type="text" name="advertisingUrl"><br>
     广告联系人:<input type="text" name="advertisingContact"><br>
     广告位置:<input type="text" name="advertisingPosition"><br>
     广告类型:<input type="text" name="advertisingType"><br>
-    广告图片:<input type="file" name="file">
     <input type="submit" value="提交">
 </form:form>
 </body>

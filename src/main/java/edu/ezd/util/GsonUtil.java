@@ -13,7 +13,7 @@ public class GsonUtil {
     private static Gson gson;
     //初始化
     static {
-        gson = new GsonBuilder()//
+        gson = new GsonBuilder().serializeNulls()//
                 .setDateFormat("yyyy-MM-dd HH:mm:ss")//
                 .create();
     }

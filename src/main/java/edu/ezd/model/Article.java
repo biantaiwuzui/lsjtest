@@ -16,9 +16,8 @@ public class Article {
     private Date sendDate;  //发布时间
     private String sendByUser_email;    //作者邮箱
     private int article_statue; //状态
-    private int sendByUser;
     private Users users;    //作者
-    private List<Browse> browses;   //浏览人
+    private List<Browse> browses;
     private List<Comments> commentss;   //评论
     private List<GoodByArticle> goodByArticles; //点赞
 
@@ -118,30 +117,5 @@ public class Article {
         this.goodByArticles = goodByArticles;
     }
 
-    public int getSendByUser() {
-        return sendByUser;
-    }
 
-    public void setSendByUser(int sendByUser) {
-        this.sendByUser = sendByUser;
-    }
-/*    @Override
-    public String toString() {
-        StringBuffer sdf = new StringBuffer();
-        sdf.append("Article{" +
-                "articleId=" + articleId +
-                ", mainTitle='" + mainTitle + '\'' +
-                ", subTitle='" + subTitle + '\'' +
-                ", articleImg='" + articleImg + '\'' +
-                ", content='" + content + '\'' +
-                ", sendDate=" + sendDate +
-                ", sendByUser_email='" + sendByUser_email + '\'' +
-                ", article_statue=" + article_statue +
-                ", users=" + users +
-                ", browses=" + browses +
-                ", commentss=" + commentss +
-                ", goodByArticles=" + goodByArticles +
-                '}');
-        return sdf.toString();
-    }*/
 }

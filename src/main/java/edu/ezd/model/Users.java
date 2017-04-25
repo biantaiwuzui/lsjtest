@@ -1,5 +1,7 @@
 package edu.ezd.model;
 
+import com.google.gson.annotations.Expose;
+import netscape.security.UserTarget;
 
 import java.util.List;
 
@@ -24,6 +26,7 @@ public class Users {
     private List<Interview> interviews;     //面试表
     private UserTotal userTotal;            //操作统计表
     private Verification verification;      //实名认证
+    private List<PostBrowse> postBrowses;
 
 
     public int getUserId() {
@@ -155,27 +158,11 @@ public class Users {
         this.theAttractionApplicants = theAttractionApplicants;
     }
 
-  /*  @Override
-    public String toString() {
-        StringBuffer sbf = new StringBuffer();
-        sbf.append("Users{" +
-                "userId=" + userId +
-                ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                ", userType='" + userType + '\'' +
-                ", token='" + token + '\'' +
-                ", user_roles=" + user_roles +
-                ", userInfo=" + userInfo +
-                ", user_enterprises=" + user_enterprises +
-                ", feedBacks=" + feedBacks +
-                ", articles=" + articles +
-                ", browses=" + browses +
-                ", comments=" + comments +
-                ", theAttractionApplicants=" + theAttractionApplicants +
-                ", interviews=" + interviews +
-                ", userTotal=" + userTotal +
-                ", verification=" + verification +
-                '}');
-        return sbf.toString();
-    }*/
+    public List<PostBrowse> getPostBrowses() {
+        return postBrowses;
+    }
+
+    public void setPostBrowses(List<PostBrowse> postBrowses) {
+        this.postBrowses = postBrowses;
+    }
 }

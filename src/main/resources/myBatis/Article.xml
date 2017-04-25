@@ -10,117 +10,17 @@
         <!-- 用id属性来映射主键字段 -->
         <id property="articleId" column="articleId"></id>
         <!-- 用result属性来映射非主键字段 -->
-        <result property="mainTitle" column="mainTitle"/>
-        <result property="subTitle" column="subTitle"/>
-        <result property="articleImg" column="articleImg"/>
-        <result property="content" column="content"/>
-        <result property="sendDate" column="sendDate"/>
-        <result property="sendByUser_email" column="sendByUser_email"/>
-        <result property="article_statue" column="article_statue"/>
-        <result property="sendByUser" column="sendByUser" />
-        <association property="users" resultMap="edu.ezd.dao.UsersDao.users" column="sendByUser"></association>
+        <result property="mainTitle" column="mainTitle" />
+        <result property="subTitle" column="subTitle" />
+        <result property="articleImg" column="articleImg" />
+        <result property="content" column="content" />
+        <result property="sendDate" column="sendDate" />
+        <result property="sendByUser_email" column="sendByUser_email" />
+        <result property="article_statue" column="article_statue" />
+        <association property="users" resultMap="edu.ezd.dao.UsersDao.users"></association>
         <collection property="browses" resultMap="edu.ezd.dao.BrowseDao.browse"></collection>
         <collection property="commentss" resultMap="edu.ezd.dao.CommentsDao.comments"></collection>
         <collection property="goodByArticles" resultMap="edu.ezd.dao.GoodByArticleDao.goodByArticle"></collection>
     </resultMap>
-
-    <select id="findAll" resultMap="article">
-     /*SELECT
-        a.articleId,
-        a.mainTitle,
-        a.subTitle,
-        a.articleImg,
-        a.content,
-        a.sendDate,
-        a.sendByUser_email,
-        a.article_statue,
-        b.browseId,
-        b.browseArticle,
-        b.BrowsePeople,
-        c.commentId,
-        c.employmentGuidanceId,
-        c.commentContent,
-        c.commentDate,
-        c.critic,
-        d.userInfoId,
-        d.birthday,
-        d.headPortrait,
-        d.phone,
-        d.nickName,
-        d.school,
-        d.sex,
-        d.jobIntention,
-        d.feedBackId,
-        d.userId,
-        d.resumeId
-      FROM ezd_article a
-       JOIN ezd_browse b on a.ArticleId = b.BrowseArticle
-       JOIN ezd_comments c on a.ArticleId=c.employmentGuidanceId
-       JOIN ezd_userinfo d on a.sendByUser=d.userId
-      WHERE a.article_statue != 2;*/
-      SELECT
-      *
- from ezd_article a
-LEFT JOIN ezd_browse b on a.ArticleId = b.BrowseArticle
-LEFT JOIN ezd_comments c ON a.ArticleId = c.employmentGuidanceId
-LEFT JOIN ezd_goodbyarticle d on a.ArticleId = d.ArticleId
-LEFT JOIN ezd_userinfo e on a.sendByUser = e.userId;
-    </select>
-
-    <!-- 根据id查询文章的详情-->
-    <select id="queryById" resultType="article">
-          SELECT
-            a.articleId,
-            a.mainTitle,
-            a.subTitle,
-            a.articleImg,
-            a.content,
-            a.sendDate,
-            a.sendByUser_email,
-            a.article_statue,
-            b.userInfoId,
-            b.birthday,
-            b.headPortrait,
-            b.phone,
-            b.nickName,
-            b.school,
-            b.sex,
-            b.jobIntention,
-            b.feedBackId,
-            b.userId,
-            b.resumeId
-      FROM ezd_article a
-			LEFT JOIN ezd_userinfo b on a.sendByUser = b.userId
-      WHERE a.article_statue != 2 and a.articleId =#{articleId}
-    </select>
-
-    <update id="updateStatu" parameterType="article">
-        UPDATE ezd_article
-        SET article_statue = #{article_statue}
-        WHERE articleId = #{articleId}
-    </update>
-
-    <insert id="save" parameterType="article">
-        INSERT INTO ezd_article(
-          mainTitle,
-          subTitle,
-          articleImg,
-          content,
-          sendDate,
-          sendByUser,
-          sendByUser_email,
-          article_statue
-        )
-        VALUES (
-            #{mainTitle},
-            #{subTitle},
-            #{articleImg},
-            #{content},
-            #{sendDate},
-            #{sendByUser},
-            #{sendByUser_email},
-            #{article_statue}
-        )
-    </insert>
 
 </mapper>
