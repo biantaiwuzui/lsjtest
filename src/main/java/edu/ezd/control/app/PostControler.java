@@ -28,12 +28,12 @@ public class PostControler {
 
     @GetMapping(value = "/findAll", produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public List<Post> findAll(){
+    public String findAll(){
         List<Post> posts = postService.findAll();
 
         String json = GsonUtil.toJson(posts);
         System.out.println(json);
-        return posts;
+        return json;
     }
 
 
