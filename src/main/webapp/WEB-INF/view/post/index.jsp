@@ -50,7 +50,7 @@
                    str+="<td>"+v.recruitmentDetails.salary+"</td>";
                    str+="<td>"+v.enterprise.enterpriseAddress+"</td>";
                    str+="<td>"+v.recruitmentDetails.educationalRequirements+"</td>";
-                   str+="<td>"+v.recruitmentDetails.recruitmentNumber+"</td>";
+                   str+="<td>"+v.recruitmentNumber+"</td>";
                    str+="<td>"+v.sendPostDate+"</td>";
                    str+="<td>"+v.postBrowses.length+"</td>";
                    str+="<td><button>查看</button></td>";
