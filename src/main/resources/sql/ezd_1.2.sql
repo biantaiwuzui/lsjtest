@@ -175,7 +175,8 @@ CREATE TABLE ezd_Post(											-- 企业招聘信息表
 	contacts VARCHAR(30) NOT NULL,							-- 招聘联系人
 	contactInformation VARCHAR(30) NOT NULL,				-- 招聘联系人得联系方式
 	Position_name int references ezd_PositionName (PositionNameId),	-- 关联岗位名称
- 	recruitmentNumber  VARCHAR(20) NOT NULL					-- 招聘人数
+ 	recruitmentNumber  VARCHAR(20) NOT NULL,					-- 招聘人数
+	status int 												--状态，判断是否有效0有效，1无效证明已经招够人或者不招了
 	
 );
 -- 新增岗位浏览记录表（关联ezd_users表，ezd_Post表）
