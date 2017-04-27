@@ -53,7 +53,7 @@
                    str+="<td>"+v.recruitmentNumber+"</td>";
                    str+="<td>"+v.sendPostDate+"</td>";
                    str+="<td>"+v.postBrowses.length+"</td>";
-                   str+="<td><button>查看</button></td>";
+                   str+="<td><button class='look' name='"+v.postId+"'>查看</button></td>";
                    str+="</tr>";
                });
                $("#tbody").html(str);
