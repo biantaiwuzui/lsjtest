@@ -187,13 +187,15 @@ create table ezd_postBrowse(
 )
 
 -- 增加工作类型字段（关联ezd_recruitmentDetailsType）
+-- 新增经验要求字段
 CREATE TABLE ezd_recruitmentDetails(							-- 岗位详情表
 	RecruitmentDetailsId INT PRIMARY KEY AUTO_INCREMENT,
-	JobRequirements VARCHAR(30) NOT NULL,					-- 工作要求
+	JobRequirements VARCHAR(300) NOT NULL,					-- 工作要求
 	GenderRequirements VARCHAR(20) NOT NULL,				-- 性别要求
 	EducationalRequirements VARCHAR(20) NOT NULL,			-- 学历要求
-	CompanyBenefits VARCHAR(30) NOT NULL,					-- 公司福利（五保一金之类的）
+	CompanyBenefits VARCHAR(300) NOT NULL,					-- 公司福利（五保一金之类的）
 	JobContent VARCHAR(300) NOT NULL,						-- 工作内容
+	experienceRequirements varchar(300),					--经验要求
 	salary VARCHAR(30),										-- 薪水
 	JobType INT REFERENCES ezd_recruitmentDetailsType (recruitmentDetailsTypeId),	-- 工作类型（实习或全职）
 	postId INT REFERENCES ezd_Post(postId)						-- 对应的岗位表
