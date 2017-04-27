@@ -12,4 +12,6 @@ public interface PostDao {
     List<Post> findAll();
 
     Post getPostInfo(int postId);
+
+    List<Post> getEnterprisePost(int enterpriseid);
 }

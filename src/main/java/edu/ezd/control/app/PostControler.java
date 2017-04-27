@@ -6,6 +6,7 @@ import edu.ezd.util.GsonUtil;
 import edu.ezd.util.JsonUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -26,6 +27,11 @@ public class PostControler {
         return "post/index";
     }
 
+    @GetMapping("/postinfo")
+    public String postInfo(){
+        return "post/postinfo";
+    }
+
     @GetMapping(value = "/findAll", produces = "application/json;charset=UTF-8")
     @ResponseBody
     public String findAll(){
@@ -33,6 +39,14 @@ public class PostControler {
 
         String json = GsonUtil.toJson(posts);
         System.out.println(json);
+        return json;
+    }
+
+    @GetMapping( value = "/find/{id}", produces = "application/json;charset=UTF-8")
+    @ResponseBody
+    public String find(@PathVariable int id){
+        Post post = postService.getPostInfo(id);
+        String json = GsonUtil.toJson(post);
         return json;
     }
 
