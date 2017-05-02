@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8cf98da3-fe50-4b40-a349-22316df611be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/myBatis/Post.xml" afterPath="$PROJECT_DIR$/build/resources/main/myBatis/Post.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ezd/control/app/PostControler.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ezd/control/app/PostControler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ezd/dao/PostDao.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ezd/dao/PostDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ezd/model/School.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ezd/model/School.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ezd/service/PostService.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ezd/service/PostService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/myBatis/Post.xml" afterPath="$PROJECT_DIR$/src/main/resources/myBatis/Post.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/myBatis/School.xml" afterPath="$PROJECT_DIR$/src/main/resources/myBatis/School.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/post/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/post/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -101,9 +109,11 @@
       <file leaf-file-name="PostDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/dao/PostDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="139">
+              <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,57 +121,11 @@
       <file leaf-file-name="RecruitmentDetails.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/RecruitmentDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="119" column="31" lean-forward="false" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+            <state relative-caret-position="339">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
-                <element signature="e#739#740#0" expanded="false" />
-                <element signature="e#782#783#0" expanded="false" />
-                <element signature="e#851#852#0" expanded="false" />
-                <element signature="e#915#916#0" expanded="false" />
-                <element signature="e#957#958#0" expanded="false" />
-                <element signature="e#995#996#0" expanded="false" />
-                <element signature="e#1057#1058#0" expanded="false" />
-                <element signature="e#1111#1112#0" expanded="false" />
-                <element signature="e#1156#1157#0" expanded="false" />
-                <element signature="e#1197#1198#0" expanded="false" />
-                <element signature="e#1265#1266#0" expanded="false" />
-                <element signature="e#1325#1326#0" expanded="false" />
-                <element signature="e#1375#1376#0" expanded="false" />
-                <element signature="e#1421#1422#0" expanded="false" />
-                <element signature="e#1611#1612#0" expanded="false" />
-                <element signature="e#1649#1650#0" expanded="false" />
-                <element signature="e#1711#1712#0" expanded="false" />
-                <element signature="e#1765#1766#0" expanded="false" />
-                <element signature="e#1802#1803#0" expanded="false" />
-                <element signature="e#1835#1836#0" expanded="false" />
-                <element signature="e#1887#1888#0" expanded="false" />
-                <element signature="e#1931#1932#0" expanded="false" />
-                <element signature="e#1964#1965#0" expanded="false" />
-                <element signature="e#1993#1994#0" expanded="false" />
-                <element signature="e#2037#2038#0" expanded="false" />
-                <element signature="e#2073#2074#0" expanded="false" />
-                <element signature="e#2104#2105#0" expanded="false" />
-                <element signature="e#2134#2135#0" expanded="false" />
-                <element signature="e#2177#2178#0" expanded="false" />
-                <element signature="e#2215#2216#0" expanded="false" />
-                <element signature="e#2245#2246#0" expanded="false" />
-                <element signature="e#2274#2275#0" expanded="false" />
-                <element signature="e#2315#2316#0" expanded="false" />
-                <element signature="e#2351#2352#0" expanded="false" />
-                <element signature="e#2380#2381#0" expanded="false" />
-                <element signature="e#2407#2408#0" expanded="false" />
-                <element signature="e#2445#2446#0" expanded="false" />
-                <element signature="e#2477#2478#0" expanded="false" />
-                <element signature="e#2542#2543#0" expanded="false" />
-                <element signature="e#2587#2588#0" expanded="false" />
-                <element signature="e#2796#2797#0" expanded="false" />
-                <element signature="e#2841#2842#0" expanded="false" />
-                <element signature="e#3097#3098#0" expanded="false" />
-                <element signature="e#3139#3140#0" expanded="false" />
-                <element signature="e#3172#3173#0" expanded="false" />
-                <element signature="e#3204#3205#0" expanded="false" />
-                <element signature="e#3251#3252#0" expanded="false" />
-                <element signature="e#3293#3294#0" expanded="false" />
+                <element signature="e#3018#3019#0" expanded="true" />
+                <element signature="e#3050#3051#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,8 +134,18 @@
       <file leaf-file-name="PostService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/service/PostService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+            <state relative-caret-position="200">
+              <caret line="62" column="63" lean-forward="false" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post_InternshipControler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/control/app/Post_InternshipControler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="107" column="46" lean-forward="false" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -180,7 +154,7 @@
       <file leaf-file-name="RecruitmentDetails.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/myBatis/RecruitmentDetails.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
+            <state relative-caret-position="25">
               <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
               <folding>
                 <marker date="1493641806365" expanded="true" signature="1498:1538" ph="select * fro... ezd_recruitmentdetails" />
@@ -192,18 +166,18 @@
       <file leaf-file-name="PostControler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/control/app/PostControler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="118" column="46" lean-forward="false" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/post/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="300">
+              <caret line="51" column="84" lean-forward="true" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -212,20 +186,46 @@
       <file leaf-file-name="Post.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/myBatis/Post.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+            <state relative-caret-position="318">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
-                <element signature="e#3770#3774#0" expanded="true" />
-                <element signature="e#3804#3808#0" expanded="true" />
-                <marker date="1493689640208" expanded="true" signature="1495:1802" ph="SELECT postI... ezd_post" />
-                <marker date="1493689640208" expanded="true" signature="1907:2231" ph="SELECT postI... ezd_post" />
-                <marker date="1493689640208" expanded="true" signature="2350:2681" ph="SELECT postI... ezd_post" />
-                <marker date="1493689640208" expanded="true" signature="2799:3248" ph="select p.pos... ezd_post" />
-                <marker date="1493689640208" expanded="true" signature="3368:3814" ph="SELECT * FRO... ezd_post" />
-                <marker date="1493689640208" expanded="true" signature="3967:4328" ph="select postI... ezd_post" />
-                <marker date="1493689640208" expanded="true" signature="4391:5146" ph="SELECT p.pos... ezd_post" />
-                <marker date="1493689640208" expanded="true" signature="4773:5015" ph="SELECT p.pos... ezd_post" />
+                <element signature="e#4298#4302#0" expanded="true" />
+                <element signature="e#4332#4336#0" expanded="true" />
+                <marker date="1493708496100" expanded="true" signature="1492:1772" ph="SELECT p.pos... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="1862:2238" ph="SELECT postI... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="1862:2265" ph="SELECT p.pos... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="2371:2695" ph="SELECT postI... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="2814:3174" ph="SELECT postI... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="3270:3778" ph="select p.pos... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="3270:3799" ph="select p.pos... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="3896:4342" ph="SELECT * FRO... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="3896:4371" ph="SELECT p.pos... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="4502:4928" ph="select postI... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="4502:4969" ph="select postI... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="5032:5829" ph="SELECT p.pos... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="5375:5706" ph="SELECT p.pos... ezd_post" />
+                <marker date="1493708496100" expanded="true" signature="5814:5829" ph="SELECT p.pos... ezd_post" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="School.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/School.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="School.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/myBatis/School.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -536,10 +536,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/ezd/control/app/RecruitmentDetailsTypeControler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/myBatis/Advertisement.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/myBatis/RecruitmentDetailsType.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/ezd/control/Type/RecruitmentDetailsTypeControler.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/ezd/service/SchoolTypeService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/myBatis/SchoolType.xml" />
@@ -582,11 +578,15 @@
         <option value="$PROJECT_DIR$/out/production/ezd/myBatis/Article.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/ezd/model/RecruitmentDetails.java" />
         <option value="$PROJECT_DIR$/src/main/resources/myBatis/RecruitmentDetails.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ezd/control/app/InternshipControler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/post/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/ezd/dao/PostDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/myBatis/Post.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/ezd/service/PostService.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/ezd/control/app/PostControler.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/post/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ezd/control/app/Post_InternshipControler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/myBatis/Post.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ezd/model/School.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/myBatis/School.xml" />
       </list>
     </option>
   </component>
@@ -653,7 +653,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -822,32 +821,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ezd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ezd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="myBatis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -875,10 +848,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ezd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1038,6 +1007,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
@@ -1054,19 +1024,20 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\gradler_project\ezd\src\main\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.ezd.control" />
-      <recent name="edu.ezd.util" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\idea_android\ezd\src\main\webapp\assets\img" />
       <recent name="D:\idea_android\ezd\src\main\resources\myBatis" />
       <recent name="D:\idea_android\ezd\src\main\java\edu\ezd\model" />
       <recent name="D:\idea_project\ezd\src\main\webapp\WEB-INF\view" />
       <recent name="D:\idea_project\ezd\src\main\java\edu\ezd\control\app" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.ezd.control.app" />
+      <recent name="edu.ezd.control" />
+      <recent name="edu.ezd.util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\gradler_project\ezd\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.myCat">
@@ -1732,7 +1703,8 @@
       <workItem from="1493295685904" duration="2076000" />
       <workItem from="1493339885491" duration="10403000" />
       <workItem from="1493637813034" duration="3644000" />
-      <workItem from="1493685407229" duration="5369000" />
+      <workItem from="1493685407229" duration="5839000" />
+      <workItem from="1493692797524" duration="8004000" />
     </task>
     <task id="LOCAL-00001" summary="招聘信息">
       <created>1493690758109</created>
@@ -1741,23 +1713,30 @@
       <option name="project" value="LOCAL" />
       <updated>1493690758109</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="招聘信息">
+      <created>1493690894914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1493690894914</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224250000" />
+    <option name="totallyTimeSpent" value="232724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6912752" sideWeight="0.5114504" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.4969743" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67607975" sideWeight="0.5295903" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67607975" sideWeight="0.5326252" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67607975" sideWeight="0.47040972" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67607975" sideWeight="0.4673748" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1775,10 +1754,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8289037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32669982" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602428" sideWeight="0.48756218" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19423369" sideWeight="0.48756218" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2870229" sideWeight="0.5124378" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18986385" sideWeight="0.5114379" order="7" side_tool="true" content_ui="tabs" />
@@ -1864,41 +1843,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/Browse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="44" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/Comments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2079">
-          <caret line="77" column="7" lean-forward="false" selection-start-line="65" selection-start-column="3" selection-end-line="77" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/GoodByArticle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="55" column="7" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="55" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="110" column="2" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="127" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/UserTotal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -2121,54 +2065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#652#653#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#740#741#0" expanded="false" />
-            <element signature="e#788#789#0" expanded="false" />
-            <element signature="e#829#830#0" expanded="false" />
-            <element signature="e#866#867#0" expanded="false" />
-            <element signature="e#926#927#0" expanded="false" />
-            <element signature="e#978#979#0" expanded="false" />
-            <element signature="e#1019#1020#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1116#1117#0" expanded="false" />
-            <element signature="e#1168#1169#0" expanded="false" />
-            <element signature="e#1212#1213#0" expanded="false" />
-            <element signature="e#1252#1253#0" expanded="false" />
-            <element signature="e#1318#1319#0" expanded="false" />
-            <element signature="e#1376#1377#0" expanded="false" />
-            <element signature="e#1418#1419#0" expanded="false" />
-            <element signature="e#1456#1457#0" expanded="false" />
-            <element signature="e#1518#1519#0" expanded="false" />
-            <element signature="e#1572#1573#0" expanded="false" />
-            <element signature="e#1621#1622#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-            <element signature="e#1847#1848#0" expanded="false" />
-            <element signature="e#1883#1884#0" expanded="false" />
-            <element signature="e#1938#1939#0" expanded="false" />
-            <element signature="e#1988#1989#0" expanded="false" />
-            <element signature="e#2028#2029#0" expanded="false" />
-            <element signature="e#2067#2068#0" expanded="false" />
-            <element signature="e#2128#2129#0" expanded="false" />
-            <element signature="e#2184#2185#0" expanded="false" />
-            <element signature="e#2233#2234#0" expanded="false" />
-            <element signature="e#2270#2271#0" expanded="false" />
-            <element signature="e#2338#2339#0" expanded="false" />
-            <element signature="e#2390#2391#0" expanded="false" />
-            <element signature="e#2426#2427#0" expanded="false" />
-            <element signature="e#2454#2455#0" expanded="false" />
-            <element signature="e#2500#2501#0" expanded="false" />
-            <element signature="e#2534#2535#0" expanded="false" />
-            <element signature="e#2571#2572#0" expanded="false" />
-            <element signature="e#2602#2603#0" expanded="false" />
-            <element signature="e#2652#2653#0" expanded="false" />
-            <element signature="e#2692#2693#0" expanded="false" />
-            <element signature="e#2738#2739#0" expanded="false" />
-            <element signature="e#2771#2772#0" expanded="false" />
-            <element signature="e#2832#2833#0" expanded="false" />
-            <element signature="e#2876#2877#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2176,9 +2072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2186,11 +2079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#894#895#0" expanded="false" />
-            <element signature="e#927#928#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2250,88 +2138,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/myBatis/RecruitmentDetails.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding>
-            <marker date="1493641806365" expanded="true" signature="1498:1538" ph="select * fro... ezd_recruitmentdetails" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/RecruitmentDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="119" column="31" lean-forward="false" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
-          <folding>
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#782#783#0" expanded="false" />
-            <element signature="e#851#852#0" expanded="false" />
-            <element signature="e#915#916#0" expanded="false" />
-            <element signature="e#957#958#0" expanded="false" />
-            <element signature="e#995#996#0" expanded="false" />
-            <element signature="e#1057#1058#0" expanded="false" />
-            <element signature="e#1111#1112#0" expanded="false" />
-            <element signature="e#1156#1157#0" expanded="false" />
-            <element signature="e#1197#1198#0" expanded="false" />
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1325#1326#0" expanded="false" />
-            <element signature="e#1375#1376#0" expanded="false" />
-            <element signature="e#1421#1422#0" expanded="false" />
-            <element signature="e#1611#1612#0" expanded="false" />
-            <element signature="e#1649#1650#0" expanded="false" />
-            <element signature="e#1711#1712#0" expanded="false" />
-            <element signature="e#1765#1766#0" expanded="false" />
-            <element signature="e#1802#1803#0" expanded="false" />
-            <element signature="e#1835#1836#0" expanded="false" />
-            <element signature="e#1887#1888#0" expanded="false" />
-            <element signature="e#1931#1932#0" expanded="false" />
-            <element signature="e#1964#1965#0" expanded="false" />
-            <element signature="e#1993#1994#0" expanded="false" />
-            <element signature="e#2037#2038#0" expanded="false" />
-            <element signature="e#2073#2074#0" expanded="false" />
-            <element signature="e#2104#2105#0" expanded="false" />
-            <element signature="e#2134#2135#0" expanded="false" />
-            <element signature="e#2177#2178#0" expanded="false" />
-            <element signature="e#2215#2216#0" expanded="false" />
-            <element signature="e#2245#2246#0" expanded="false" />
-            <element signature="e#2274#2275#0" expanded="false" />
-            <element signature="e#2315#2316#0" expanded="false" />
-            <element signature="e#2351#2352#0" expanded="false" />
-            <element signature="e#2380#2381#0" expanded="false" />
-            <element signature="e#2407#2408#0" expanded="false" />
-            <element signature="e#2445#2446#0" expanded="false" />
-            <element signature="e#2477#2478#0" expanded="false" />
-            <element signature="e#2542#2543#0" expanded="false" />
-            <element signature="e#2587#2588#0" expanded="false" />
-            <element signature="e#2796#2797#0" expanded="false" />
-            <element signature="e#2841#2842#0" expanded="false" />
-            <element signature="e#3097#3098#0" expanded="false" />
-            <element signature="e#3139#3140#0" expanded="false" />
-            <element signature="e#3172#3173#0" expanded="false" />
-            <element signature="e#3204#3205#0" expanded="false" />
-            <element signature="e#3251#3252#0" expanded="false" />
-            <element signature="e#3293#3294#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/dao/PostDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/util/SMSUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1084">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2339,9 +2149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-484">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2349,11 +2156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-950">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1456#1457#0" expanded="false" />
-            <element signature="e#1512#1513#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2361,49 +2163,125 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-934">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/myBatis/Post.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/RecruitmentDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+        <state relative-caret-position="339">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
-            <element signature="e#3770#3774#0" expanded="true" />
-            <element signature="e#3804#3808#0" expanded="true" />
-            <marker date="1493689640208" expanded="true" signature="1495:1802" ph="SELECT postI... ezd_post" />
-            <marker date="1493689640208" expanded="true" signature="1907:2231" ph="SELECT postI... ezd_post" />
-            <marker date="1493689640208" expanded="true" signature="2350:2681" ph="SELECT postI... ezd_post" />
-            <marker date="1493689640208" expanded="true" signature="2799:3248" ph="select p.pos... ezd_post" />
-            <marker date="1493689640208" expanded="true" signature="3368:3814" ph="SELECT * FRO... ezd_post" />
-            <marker date="1493689640208" expanded="true" signature="3967:4328" ph="select postI... ezd_post" />
-            <marker date="1493689640208" expanded="true" signature="4391:5146" ph="SELECT p.pos... ezd_post" />
-            <marker date="1493689640208" expanded="true" signature="4773:5015" ph="SELECT p.pos... ezd_post" />
+            <element signature="e#3018#3019#0" expanded="true" />
+            <element signature="e#3050#3051#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/service/PostService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/control/app/InternshipControler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/control/app/PostControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        <state relative-caret-position="50">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/post/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="51" column="84" lean-forward="true" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/dao/PostDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/service/PostService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <caret line="62" column="63" lean-forward="false" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/control/app/Post_InternshipControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="107" column="46" lean-forward="false" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/myBatis/RecruitmentDetails.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <marker date="1493641806365" expanded="true" signature="1498:1538" ph="select * fro... ezd_recruitmentdetails" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/control/app/PostControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="118" column="46" lean-forward="false" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/myBatis/Post.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#4298#4302#0" expanded="true" />
+            <element signature="e#4332#4336#0" expanded="true" />
+            <marker date="1493708496100" expanded="true" signature="1492:1772" ph="SELECT p.pos... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="1862:2238" ph="SELECT postI... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="1862:2265" ph="SELECT p.pos... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="2371:2695" ph="SELECT postI... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="2814:3174" ph="SELECT postI... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="3270:3778" ph="select p.pos... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="3270:3799" ph="select p.pos... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="3896:4342" ph="SELECT * FRO... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="3896:4371" ph="SELECT p.pos... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="4502:4928" ph="select postI... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="4502:4969" ph="select postI... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="5032:5829" ph="SELECT p.pos... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="5375:5706" ph="SELECT p.pos... ezd_post" />
+            <marker date="1493708496100" expanded="true" signature="5814:5829" ph="SELECT p.pos... ezd_post" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ezd/model/School.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/myBatis/School.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
           <folding />
         </state>
       </provider>

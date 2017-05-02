@@ -22,6 +22,7 @@ import java.util.List;
 @RequestMapping("/post")
 public class PostControler {
     private final  Logger log = Logger.getLogger(this.getClass());
+    private final int jobType = 2;
     @Resource
     private PostService postService;
 
@@ -35,6 +36,15 @@ public class PostControler {
         return "post/postinfo";
     }
 
+    @GetMapping(value = "/getAll", produces = "application/json;charset=UTF-8")
+    @ResponseBody
+    public String getAll(){
+        List<Post> posts = postService.getAll();
+        String json = GsonUtil.toJson(posts);
+        log.info(json);
+        return json;
+    }
+
     /**
      * 查询所有
      * @return
@@ -42,7 +52,7 @@ public class PostControler {
     @GetMapping(value = "/findAll", produces = "application/json;charset=UTF-8")
     @ResponseBody
     public String findAll(){
-        List<Post> posts = postService.findAll();
+        List<Post> posts = postService.findAll(jobType);
 
 
         String json = GsonUtil.toJson(posts);
@@ -58,7 +68,7 @@ public class PostControler {
     @GetMapping(value = "/address/{address}", produces = "application/json;charset=UTF-8")
     @ResponseBody
     public String address(@PathVariable String address){
-        List<Post> posts = postService.addressPost(address);
+        List<Post> posts = postService.addressPost(address,jobType);
         String json = GsonUtil.toJson(posts);
         log.info(json);
         return json;
@@ -75,7 +85,7 @@ public class PostControler {
         if(desc.equals("默认排序")){
             return findAll();
         }else {
-            List<Post> posts = postService.descPost(desc);
+            List<Post> posts = postService.descPost(desc,jobType);
             String json = GsonUtil.toJson(posts);
             log.info(json);
             return json;
@@ -92,7 +102,7 @@ public class PostControler {
     @ResponseBody
     public String salary(@PathVariable double minsalary,@PathVariable double maxsalary){
 
-        List<Post> posts = postService.salaryPost(minsalary,maxsalary);
+        List<Post> posts = postService.salaryPost(minsalary,maxsalary,jobType);
         String json = GsonUtil.toJson(posts);
         log.info(json);
         return json;
