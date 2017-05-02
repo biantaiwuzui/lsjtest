@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cf98da3-fe50-4b40-a349-22316df611be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/b.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___lsy___ezd_1_0_SNAPSHOT_war__exploded__archive.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/sql/ezd_1.0.sql" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___lsy___ezd_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___lsy___ezd_1_0_SNAPSHOT_war__exploded_.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/myBatis/Article.xml" afterPath="$PROJECT_DIR$/build/resources/main/myBatis/Article.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/myBatis/Browse.xml" afterPath="$PROJECT_DIR$/build/resources/main/myBatis/Browse.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/myBatis/EnterpriseType.xml" afterPath="$PROJECT_DIR$/build/resources/main/myBatis/EnterpriseType.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/myBatis/PositionName.xml" afterPath="$PROJECT_DIR$/build/resources/main/myBatis/PositionName.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/myBatis/Post.xml" afterPath="$PROJECT_DIR$/build/resources/main/myBatis/Post.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/myBatis/RecruitmentDetails.xml" afterPath="$PROJECT_DIR$/build/resources/main/myBatis/RecruitmentDetails.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/myBatis/RecruitmentDetailsType.xml" afterPath="$PROJECT_DIR$/build/resources/main/myBatis/RecruitmentDetailsType.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ezd/control/app/PostControler.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ezd/control/app/PostControler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ezd/dao/PostDao.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ezd/dao/PostDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ezd/model/RecruitmentDetails.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ezd/model/RecruitmentDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ezd/service/PostService.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ezd/service/PostService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/myBatis/Post.xml" afterPath="$PROJECT_DIR$/src/main/resources/myBatis/Post.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/myBatis/RecruitmentDetails.xml" afterPath="$PROJECT_DIR$/src/main/resources/myBatis/RecruitmentDetails.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -220,7 +202,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/post/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="200">
               <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding />
             </state>
@@ -1750,12 +1732,20 @@
       <workItem from="1493295685904" duration="2076000" />
       <workItem from="1493339885491" duration="10403000" />
       <workItem from="1493637813034" duration="3644000" />
-      <workItem from="1493685407229" duration="5223000" />
+      <workItem from="1493685407229" duration="5369000" />
     </task>
+    <task id="LOCAL-00001" summary="招聘信息">
+      <created>1493690758109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493690758109</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224104000" />
+    <option name="totallyTimeSpent" value="224250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
@@ -1788,7 +1778,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32669982" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602428" sideWeight="0.48756218" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602428" sideWeight="0.48756218" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2870229" sideWeight="0.5124378" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18986385" sideWeight="0.5114379" order="7" side_tool="true" content_ui="tabs" />
@@ -1852,7 +1842,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="招聘信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="招聘信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2411,7 +2402,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/post/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="200">
           <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding />
         </state>
