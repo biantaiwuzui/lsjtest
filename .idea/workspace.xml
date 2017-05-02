@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cf98da3-fe50-4b40-a349-22316df611be" name="Default" comment="招聘信息">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/ezd/control/app/Post_InternshipControler.java" />
+    <list default="true" id="8cf98da3-fe50-4b40-a349-22316df611be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/myBatis/School.xml" afterPath="$PROJECT_DIR$/build/resources/main/myBatis/School.xml" />
     </list>
@@ -1698,7 +1697,7 @@
       <workItem from="1493339885491" duration="10403000" />
       <workItem from="1493637813034" duration="3644000" />
       <workItem from="1493685407229" duration="5839000" />
-      <workItem from="1493692797524" duration="8677000" />
+      <workItem from="1493692797524" duration="8687000" />
     </task>
     <task id="LOCAL-00001" summary="招聘信息">
       <created>1493690758109</created>
@@ -1721,11 +1720,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493709797234</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="招聘信息">
+      <created>1493711927870</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493711927870</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233397000" />
+    <option name="totallyTimeSpent" value="233407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
