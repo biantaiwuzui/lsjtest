@@ -24,6 +24,7 @@
         <collection property="interviews" resultMap="edu.ezd.dao.InterviewDao.interview"></collection>
         <collection property="userTotal" resultMap="edu.ezd.dao.UserTotalDao.userTotal"></collection>
         <collection property="verification" resultMap="edu.ezd.dao.VerificationDao.verification"></collection>
+        <collection property="postBrowses" resultMap="edu.ezd.dao.PostBrowseDao.postBrowse"></collection>
 
     </resultMap>
 

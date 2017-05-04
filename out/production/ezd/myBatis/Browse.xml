@@ -12,8 +12,11 @@
         <!-- 用result属性来映射非主键字段 -->
         <association property="users" resultMap="edu.ezd.dao.UsersDao.users"></association>
         <association property="article" resultMap="edu.ezd.dao.ArticleDao.article"></association>
-
     </resultMap>
+
+    <insert id="addBrowse" parameterType="browse">
+        INSERT into ezd_browse(BrowseArticle,BrowsePeople) VALUES (#{users.userId},#{article.articleId})
+    </insert>
 
 
 

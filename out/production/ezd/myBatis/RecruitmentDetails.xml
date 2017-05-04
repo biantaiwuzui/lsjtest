@@ -8,17 +8,36 @@
 
     <resultMap id="recruitmentDetails" type="RecruitmentDetails">
         <!-- 用id属性来映射主键字段 -->
-        <id property="RecruitmentDetailsId" column="RecruitmentDetailsId"></id>
+        <id property="recruitmentDetailsId" column="recruitmentDetailsId"></id>
         <!-- 用result属性来映射非主键字段 -->
         <result property="jobRequirements" column="jobRequirements" />
         <result property="genderRequirements" column="genderRequirements" />
         <result property="educationalRequirements" column="educationalRequirements" />
         <result property="jobContent" column="jobContent" />
         <result property="salary" column="salary" />
+        <result property="minsalary" column="minsalary" />
+        <result property="maxsalary" column="maxsalary" />
+        <result property="jobType" column="jobType" />
+        <result property="experienceRequirements" column="experienceRequirements" />
+        <result property="postId" column="postId" />
         <!-- 一对一关联 -->
         <association property="post"  resultMap="edu.ezd.dao.PostDao.post"></association>
         <!--  一对多关联 -->
         <collection property="recruitmentDetailsType" resultMap="edu.ezd.dao.RecruitmentDetailsTypeDao.recruitmentDetailsType" ></collection>
     </resultMap>
+
+    <select id="findAll" resultType="recruitmentDetails">
+        select * from ezd.ezd_recruitmentdetails;
+    </select>
+
+    <select id="getRecruitmentDetails" parameterType="int" resultType="recruitmentDetails">
+        select * from ezd.ezd_recruitmentdetails
+        <where>
+            <if test="postId">postId = #{postId}</if>
+        </where>
+
+    </select>
+
+
 
 </mapper>

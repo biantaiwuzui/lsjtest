@@ -12,7 +12,7 @@ public class Post {
     private String post_title;  //招聘岗位的标题
     private Date sendPostDate;   //发布时间
     private String contacts;     //联系人
-    private String contactsInformation;  //联系人电话
+    private String contactInformation;  //联系人电话
     private String recruitmentNumber;    //招聘人数
     private int positionNameId;
     private int enterpriseId;
@@ -53,12 +53,12 @@ public class Post {
         this.contacts = contacts;
     }
 
-    public String getContactsInformation() {
-        return contactsInformation;
+    public String getContactInformation() {
+        return contactInformation;
     }
 
-    public void setContactsInformation(String contactsInformation) {
-        this.contactsInformation = contactsInformation;
+    public void setContactInformation(String contactInformation) {
+        this.contactInformation = contactInformation;
     }
 
     public String getRecruitmentNumber() {
